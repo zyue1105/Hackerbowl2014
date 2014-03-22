@@ -1,0 +1,280 @@
+{
+    "question_list": {
+        "mm_name": "interview_questions_list",
+        "location": "http://www.careercup.com/page?pid=trees-and-graphs-interview-questions",
+        "download_status": "DOWNLOAD_DONE",
+        "title": "Trees and Graphs Interview Questions",
+        "interview_questions": [
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=6241652616200192",
+                "download_status": "UNPROCESSED",
+                "votes": "2",
+                "votesCount": "2",
+                "answersCount": "13",
+                "title": "Given a Binary Tree (balanced or not) write a method that transforms the tree in a degenerate tree (basically a data structure like a sorted linked list where each node has the left child null) and returns the new root. This must be made in place, no external memory usage is allowed."
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=6235039171870720",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "0",
+                "answersCount": "1",
+                "title": "Write code to find the next least node in a binary search tree given a node?"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=5719759060467712",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "0",
+                "answersCount": "3",
+                "title": "One of the many ways of representing a tree is to have an array(of length same as number of nodes), where each element in the node denotes the parent of that node.             Eg - {-1, 0, 0, 1, 1} would represent a tree with - * 0 as root * 1 and 2 as children of 0 * 3 and 4 as children of 1  Given a similar representation, you have to print reverse level order traversal of the corresponding tree.  Level order traversal of a tree is where we traverse levels of tree one by one.  Eg - For the above given tree, level order traversal would be - 0 1 2 3 4 And hence, the reverse level order traversal is - 3 4 1 2 0 Please note - * An element with parent = -1 is the root element. * An element with the least index becomes the left most child. (ie. a node with always be on left of all its siblings that have higher index than it) * When printing a level of tree you need to maintain left to right order.  Input Format - First line of the input contains number of nodes in the tree (N) Next line contains N (space seperated) numbers that denote where i-th number will denote the parent node of i-th node.  Output Format - Print reverse level order traversal of the corresponding tree, with every new level starting in a different line. Notes/Limits - * 1 <= N <= 50 * There will be only one root element in any given test case * Given numbers will always form a valid undivided tree * Output should be in the exact format as specified (including whitespaces) Sample Test Cases -     Input - 5 -1 0 0 2 1 Output - 4 3 1 2 0   Input - 9 8 7 0 5 5 8 7 0 -1 Output - 1 6 2 7 3 4 0 5 8 Input - 45 24 42 4 30 29 43 22 15 26 36 26 16 3 22 21 41 18 16 34 41 12 29 32 30 43 15 4 38 36 -1 24 42 18 6 21 38 6 17 32 17 3 34 12 14 14 Output - 1 31 20 42 9 28 12 40 33 36 3 23 37 39 6 13 27 35  0 30 11 17 22 38 7 25 5 24 16 32 15 19 8 10 43 44 18 41 2 26 14 34 4 21 29  Input - 33 17 25 0 14 7 2 5 25 18 8 16 27 10 9 19 7 31 31 19 0 8 14 9 17 18 2 30 16 30 10 5 -1 27 Output - 13 22 26 28 4 15 9 20 6 30 1 7 3 21 8 24 5 25 14 18 12 29 11 32 2 19 10 27 0 23 16 17 31"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=5130214535331840",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "0",
+                "answersCount": "13",
+                "title": "Given a binary search tree of n nodes, find all the pair of  nodes whose sum is equal to a given number k in O(n) time and constant space."
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=6331397635571712",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "0",
+                "answersCount": "12",
+                "title": "Determine if a tree is a valid BST with no duplicated values. (This means that if the binary tree has a duplicated number it should return \"invalid\" even if it's an actual BST)  I gave an O(n) solution and interviewer seemed happy with it."
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=5474060859342848",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "2",
+                "answersCount": "7",
+                "title": "In the Amazon Office, Employees are use to sit in cubical offices and all the offices are connected with some other offices, but they are not arranged in any well defined order. Offices are connected means they are sharing their walls with other offices. There are two types of Employees in Amazon i.e. 'Testers' and 'Developers'. Manager of Amazon don't want any 'Tester' and 'Developer' to sit in nearby cubical office, it means there should not be any shared wall between two 'Testers'/'Developers'.  Input:- First line consist of an integer n, which is number of common walls. Next n lines consist of 2 integers a and b, which represents the Office Number between which the wall is being shared. Output: - Print 'Yes', if condition of the manager can be satisfied and print 'No' if not.  Example: - 1-2-3     |    4 Office number 2 is sharing its 3 walls with Office 1,3 & 4.....that is why if Office 2 has a 'Developer' than Office 1,3 & 4 cannot have any 'Developer'.  INPUT:- 3 1 2 2 3 2 4 Output: - Yes  Any better approach then DFS i.e. O(V+E)..??"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=5919901415899136",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "0",
+                "answersCount": "15",
+                "title": "Replace each node with the sum of all greater nodes in a given BST?"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=6482154242441216",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "0",
+                "answersCount": "8",
+                "title": "Given a binary search tree whose nodes are integers, find the frequency of occurrence of each digit in the tree.tr"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=5728785773101056",
+                "download_status": "UNPROCESSED",
+                "votes": "1",
+                "votesCount": "1",
+                "answersCount": "22",
+                "title": "Given a binary tree. Modify it in such a way that after modification you can have a preorder traversal of it using only right pointers. During modification you can use right as well as left pointers. Write complete code and dry run it for some test cases"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=5148778843602944",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "0",
+                "answersCount": "13",
+                "title": "Find cousins of a given node in a Binary tree and  BST.  My Approach:"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=5726815775621120",
+                "download_status": "UNPROCESSED",
+                "votes": "-4",
+                "votesCount": "6",
+                "answersCount": "12",
+                "title": "Given two Btrees. these trees \"may\" have right and left branches swapped. Now compare it"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=5579404646285312",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "2",
+                "answersCount": "6",
+                "title": "Question 1 / 1 (Path Explosion EASY) You were given a Binary Tree (not necessarily a Binary Search Tree) to play with, say T. T had some special properties  Each internal node in T had exactly 2 children Each internal node in T was represented by an uppercase English alphabet (A-Z) Each leaf node in T was represented by a lowercase English alphabet (a-z) You were told remember T as long as you could. Hence, you memorised the string formed by traversing T in post-order. You used something similar to the pseudocode below  toPostOrderString (node)     if node is leaf         return node.value     else         T = \"\"         T = T + toPostOrderString(node.left)         T = T + toPostOrderString(node.right)         T = T + node.value         return T Now, time has come to use that string again. The Eye has contacted you. Yes, the secret organisation mentioned in \"Now you see me\" ( don't tell anyone they are real !! )  You remember the string you memorised back then. You must reconstruct the binary tree T. You are also given a string A. All the characters of A are uppercase English alphabets. Let us assume that T has L leaves. Then, there will be exactly L paths from the root to the leaves - 1 unique path to each leaf.  You have to tell The Eye the number of paths out of L, on which, A exists as a sub-sequence. Look at the explanation for the Sample Case 1 for clarity.  You have to implement the method explodePaths in the code. explodePaths is passed the following parameters, respectively  N, the number of nodes in T S, the string representation of the post-order traversal of T. Of course, the length of S will be equal to N. K, the length of the string A A, the string you must find in the paths from the root of T, to the leaves in T. Note  It is not necessary that T is balanced. But, each internal node always has exactly 2 children. It is possible that both those children are internal nodes also. It is possible that only one of those children is an internal node. For the given string S, because of the constraint that each internal node has exactly 2 children, you will always be able to determine the tree T, uniquely. It is not necessary that all characters in T are unique. There may be several nodes with the same value. In this problem statement, by sub-sequence we mean not necessarily contiguous. This is different from a sub-string. Do not print the answer in explodePaths. Just return the value. The code-template interviewstreet provides does the input and output itself. Consider the following tree     A   / \\  t   B     / \\    /   \\   B     A  / \\   / \\ x   y a   b This tree is given in Sample Case 1 as  N = 9 S = \"txyBabABA\" K = 2 A = \"AA\" Now, there are 5 leaf nodes, and hence, 5 paths from the root to leaves - 1 for each leaf.  - A-t - A-B-B-x - A-B-B-y - A-B-A-a - A-B-A-b Out of these 5 paths, you have to find the number of paths, on which \"AA\" exists as a sub-sequence. Of course, there are only 2 such paths  - A-B-A-a - A-B-A-b Hence the expected answer is 2.  In the same T above  The answer for A = \"BB\", is 2 The answer for A = \"BA\", is 2 The answer for A = \"AB\", is 4 The answer for K = 1 and A = \"A\", is 5 The answer for K = 1 and A = \"B\", is 4 The Sample Case 2 has a little more complicated T. The string S in Sample Case 2 is yeBgeuCBxAB.  Constraints  N ?? 10000 K ?? 100 ?The expected time complexity of the algorithm is O(N)."
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=5161719076749312",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "0",
+                "answersCount": "9",
+                "title": "Given set of N threads generate sum of all numbers in an array of known size M"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=5857232122019840",
+                "download_status": "UNPROCESSED",
+                "votes": "2",
+                "votesCount": "2",
+                "answersCount": "19",
+                "title": "Question 1 / 3 (Odd even level difference) You are given a function calcDifference which takes in the root pointer of a binary tree as it's input. Complete the function to return the sum of values of nodes at odd height - sum of values of node at even height. Consider the root node is at height 1  Sample Input:  Sample Output -74  Explanation: [ (1 + 4 + 5 + 6 + 7 ) ? (2 + 3 + 8 + 9 + 10 + 11 + 12 + 13  + 14 + 15)   = -74 ]"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=4786604149309440",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "0",
+                "answersCount": "4",
+                "title": "Given 2 quad-trees find the intersection of black-pixels."
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=6491225129484288",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "0",
+                "answersCount": "4",
+                "title": "Define a quad-tree for a black and white image. Count the number the of black pixels."
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=4807138387951616",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "0",
+                "answersCount": "18",
+                "title": "You are given a grid, with points on the intersections (think a map of streets, people are standing on random corners). Write code to calculate the point on the grid that is the shortest distance from every point on the grid."
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=6189585818189824",
+                "download_status": "UNPROCESSED",
+                "votes": "2",
+                "votesCount": "2",
+                "answersCount": "26",
+                "title": "We are given a set of integers with repeated occurences of elements. For Example, S={1,2,2}. We need to print the power set of S ensuring that the repeated elements of the power set are printed only once. For the above S, the power set will be {NULL, {1}, {2}, {2}, {1,2}, {1,2}, {2,2}, {1,2,2}}. So, as per the question requirements, we need to print {NULL, {1}, {2}, {1,2}, {2,2}, {1,2,2}}"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=5542548995047424",
+                "download_status": "UNPROCESSED",
+                "votes": "-1",
+                "votesCount": "1",
+                "answersCount": "15",
+                "title": "write a program to find sum of any path from root to leaf such that the sum of all nodes along the PATH is max compared to all other path,,"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=6056099308371968",
+                "download_status": "UNPROCESSED",
+                "votes": "1",
+                "votesCount": "1",
+                "answersCount": "9",
+                "title": "You are given a sorted skewed binary tree. How can you create a binary search tree of minimum height from it?"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=4985780573306880",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "0",
+                "answersCount": "17",
+                "title": "Write a routine to verify if a given tree is a BST (Binary Search Tree)."
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=6203717334335488",
+                "download_status": "UNPROCESSED",
+                "votes": "1",
+                "votesCount": "1",
+                "answersCount": "16",
+                "title": "A standard chess knight (it moves in its standard way i.e. L shaped OR 2.5 moves) is sitting at the position a1 on an N x N chess board. What is the minimum number of moves it will take to reach the diagonally opposite corner? P.S. - If it were a 8 x 8 chess board, the final destination for the knight would be h8"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=5140584079556608",
+                "download_status": "UNPROCESSED",
+                "votes": "1",
+                "votesCount": "1",
+                "answersCount": "8",
+                "title": "Given a BST convert it into new Data Structure that satisfies following conditions:  1. every leaf node's left ptr point to its parent and right ptr points to the next leaf 2. every non leaf node's left ptr points to its parent and right ptr is NULL 3. return the head and print the new DS  example:     7                        /  \\                       5   9                      /  \\    \\                     4   6   10  output:  head->4->5->7         |        ->6->5->7         |         ->10->9-7  with optimal time and space complexity"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=5716253578625024",
+                "download_status": "UNPROCESSED",
+                "votes": "1",
+                "votesCount": "1",
+                "answersCount": "11",
+                "title": "create the mirror tree for the given BST, provided with the root node of the tree"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=21371668",
+                "download_status": "UNPROCESSED",
+                "votes": "2",
+                "votesCount": "2",
+                "answersCount": "17",
+                "title": "WAP to create a mirror of a binary tree. Extend the code or write a new code if not possible to do mirroring at alternate levels . Here in the second part , if the two trees are placed in front of each other , then odd levels should be exact mirror as a whole and even levels should be exactly same . Then write the iterative version for the above codes."
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=21829664",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "0",
+                "answersCount": "13",
+                "title": "consider a full tree.Every node at odd level has 3 children and every node at even level has 4 children. If root is at level one, derive number of nodes if the leaf nodes are at level k."
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=21296665",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "4",
+                "answersCount": "11",
+                "title": "Construct a BST from inorder and preorder traversal string. Write code for it."
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=21444667",
+                "download_status": "UNPROCESSED",
+                "votes": "-11",
+                "votesCount": "11",
+                "answersCount": "17",
+                "title": "Given a tree, verify if it contains a subtree."
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=20771664",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "0",
+                "answersCount": "16",
+                "title": "Given a binary tree with each node having a pointer to its parent, Write a function that can find the immediate right neighbor of a given node. Don't use BFS.   Node* RightNeighbor(Node* node)  Note: Root of the tree is not given"
+            },
+            {
+                "mm_name": "interview_question",
+                "location": "http://www.careercup.com/question?id=20159671",
+                "download_status": "UNPROCESSED",
+                "votes": "0",
+                "votesCount": "0",
+                "answersCount": "18",
+                "title": "Write a program to check if one tree is a subtree of other or not."
+            }
+        ]
+    }
+}

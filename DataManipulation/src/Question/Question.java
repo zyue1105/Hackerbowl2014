@@ -1,17 +1,20 @@
 package Question;
 
-import Feature.ArrayStringFeature;
-import Feature.Feature;
-import Feature.LinkedListFeature;
-import Feature.StackQueueFeature;
-import Feature.TreeAndArrayFeature;
-import Feature.TreeGraphFeature;
+//import Feature.ArrayStringFeature;
+//import Feature.Feature;
+//import Feature.LinkedListFeature;
+//import Feature.StackQueueFeature;
+//import Feature.TreeAndArrayFeature;
+//import Feature.TreeGraphFeature;
+
+import Feature.FeatureList;
+import Feature.TotalFeature;
 
 public class Question implements Comparable<Question> {
 	private String title = "";
 	private Integer voteCount = 0;
 	private Integer Answers = 0;
-	private TreeAndArrayFeature arrayFeature = new TreeAndArrayFeature();
+	private TotalFeature arrayFeature = new TotalFeature();
 
 	public Question(String question, String answers) {
 		title = question;
@@ -49,6 +52,10 @@ public class Question implements Comparable<Question> {
 		return title;
 	}
 	
+	public FeatureList getFeature() {
+		return arrayFeature;
+	}
+	
 	public void OutputFeatures() {
 		arrayFeature.outputNormalizedToConsole();
 	//	arrayFeature.outputOriginalToConsole();
@@ -57,7 +64,7 @@ public class Question implements Comparable<Question> {
 	public void OutputFeatureNames() {
 		arrayFeature.printHead();
 	}
-
+	
 	@Override
 	public int compareTo(Question other) {
 		if(this.Answers==other.Answers){

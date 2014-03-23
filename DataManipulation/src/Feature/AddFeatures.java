@@ -344,7 +344,7 @@ public class AddFeatures {
 		ret.add(new Feature("Recursion_Q_permutation", new String[] { "permutation" }));
 		ret.add(new Feature("Recursion_Q_parentheses", new String[] { "parentheses" }));
 		
-		ret.add(new Feature("StackQueue_Q_All", new String[] { "recursion", "recursive", "sub-problem", "f(n)", "bottom-up", "top-down", "fibonacci", "robot", "subset", "permutation", "parentheses" }));
+		ret.add(new Feature("Recursion_Q_All", new String[] { "recursion", "recursive", "sub-problem", "f(n)", "bottom-up", "top-down", "fibonacci", "robot", "subset", "permutation", "parentheses" }));
 		
 		ret.add(new Feature(true, "Recursion_QA_recursion", new String[] { "recursion" }));
 		ret.add(new Feature(true, "Recursion_QA_recursive", new String[] { "recursive" }));
@@ -358,7 +358,7 @@ public class AddFeatures {
 		ret.add(new Feature(true, "Recursion_QA_permutation", new String[] { "permutation" }));
 		ret.add(new Feature(true, "Recursion_QA_parentheses", new String[] { "parentheses" }));
 		
-		ret.add(new Feature(true, "StackQueue_QA_All", new String[] { "recursion", "recursive", "sub-problem", "f(n)", "bottom-up", "top-down", "fibonacci", "robot", "subset", "permutation", "parentheses" }));
+		ret.add(new Feature(true, "Recursion_QA_All", new String[] { "recursion", "recursive", "sub-problem", "f(n)", "bottom-up", "top-down", "fibonacci", "robot", "subset", "permutation", "parentheses" }));
 		
 		return ret;
 	}
@@ -379,7 +379,7 @@ public class AddFeatures {
 		ret.add(new Feature("SortSearch_Q_bucket", new String[] { "bucket" }));
 		ret.add(new Feature("SortSearch_Q_search", new String[] { "search" }));
 
-		ret.add(new Feature("SortSearch_QA_All", new String[] { "sort", "sorted", "sorting", "unsorted", "bubble", "selection", "merge", "mergesort", "quicksort", "bucketsort", "bucket", "search" }));
+		ret.add(new Feature("SortSearch_Q_All", new String[] { "sort", "sorted", "sorting", "unsorted", "bubble", "selection", "merge", "mergesort", "quicksort", "bucketsort", "bucket", "search" }));
 		
 		ret.add(new Feature(true, "SortSearch_QA_sort", new String[] { "sort" }));
 		ret.add(new Feature(true, "SortSearch_QA_sorted", new String[] { "sorted" }));

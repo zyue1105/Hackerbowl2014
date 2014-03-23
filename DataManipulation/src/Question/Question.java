@@ -11,13 +11,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Feature.FeatureList;
+import Feature.TestFeature;
 import Feature.TotalFeature;
 
 public class Question implements Comparable<Question> {
 	private String title = "";
 	private Integer voteCount = 0;
 	private Integer Answers = 0;
-	private TotalFeature arrayFeature = new TotalFeature();
+	//private TotalFeature arrayFeature = new TotalFeature();
+	private FeatureList arrayFeature = new TotalFeature();
 	private String location = "";
 	private List<String> classes = new ArrayList<String>();
 

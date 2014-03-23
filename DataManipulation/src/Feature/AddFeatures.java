@@ -426,4 +426,235 @@ public class AddFeatures {
 		
 		return ret;
 	}
+	
+	public List<Feature> AddMathFeatures() {
+		List<Feature> ret = new ArrayList<Feature>();
+	
+		ret.add(new Feature("Math_Q_max", new String[] { "max" }));
+		ret.add(new Feature("Math_Q_min", new String[] { "min" }));
+		ret.add(new Feature("Math_Q_prime", new String[] { "prime" }));
+		ret.add(new Feature("Math_Q_bayes", new String[] { "bayes" }));
+		ret.add(new Feature("Math_Q_probability", new String[] { "probability" }));
+		ret.add(new Feature("Math_Q_point", new String[] { "point" }));
+		ret.add(new Feature("Math_Q_vertice", new String[] { "vertice" }));
+		ret.add(new Feature("Math_Q_polygon", new String[] { "polygon" }));
+		ret.add(new Feature("Math_Q_plane", new String[] { "plane" }));
+		ret.add(new Feature("Math_Q_dimension", new String[] { "dimension" }));
+		ret.add(new Feature("Math_Q_factor", new String[] { "factor" }));
+		
+		ret.add(new Feature("Math_Q_All", new String[] { "max", "min", "prime", "bayes", "probability", "point", "vertice", "polygon", "plane", "dimension", "factor" }));
+		
+		ret.add(new Feature(true, "Math_QA_max", new String[] { "max" }));
+		ret.add(new Feature(true, "Math_QA_min", new String[] { "min" }));
+		ret.add(new Feature(true, "Math_QA_prime", new String[] { "prime" }));
+		ret.add(new Feature(true, "Math_QA_bayes", new String[] { "bayes" }));
+		ret.add(new Feature(true, "Math_QA_probability", new String[] { "probability" }));
+		ret.add(new Feature(true, "Math_QA_point", new String[] { "point" }));
+		ret.add(new Feature(true, "Math_QA_vertice", new String[] { "vertice" }));
+		ret.add(new Feature(true, "Math_QA_polygon", new String[] { "polygon" }));
+		ret.add(new Feature(true, "Math_QA_plane", new String[] { "plane" }));
+		ret.add(new Feature(true, "Math_QA_dimension", new String[] { "dimension" }));
+		ret.add(new Feature(true, "Math_QA_factor", new String[] { "factor" }));
+		
+		ret.add(new Feature(true, "Math_QA_All", new String[] { "max", "min", "prime", "bayes", "probability", "point", "vertice", "polygon", "plane", "dimension", "factor" }));
+		
+		return ret;
+	}
+	
+	public List<Feature> AddTestingFeatures() {
+		List<Feature> ret = new ArrayList<Feature>();
+	
+		ret.add(new Feature("Testing_Q_black", new String[] { "black" }));
+		ret.add(new Feature("Testing_Q_box", new String[] { "box" }));
+		ret.add(new Feature("Testing_Q_unit", new String[] { "unit" }));
+		ret.add(new Feature("Testing_Q_test", new String[] { "test" }));
+		ret.add(new Feature("Testing_Q_testing", new String[] { "testing" }));
+		ret.add(new Feature("Testing_Q_integration", new String[] { "integration" }));
+		ret.add(new Feature("Testing_Q_case", new String[] { "case" }));
+		ret.add(new Feature("Testing_Q_fail", new String[] { "fail" }));
+		ret.add(new Feature("Testing_Q_pass", new String[] { "pass" }));
+		ret.add(new Feature("Testing_Q_coverage", new String[] { "coverage" }));
+		ret.add(new Feature("Testing_Q_junit", new String[] { "junit" }));
+		ret.add(new Feature("Testing_Q_mistake", new String[] { "mistake" }));
+		ret.add(new Feature("Testing_Q_debug", new String[] { "debug" }));
+		ret.add(new Feature("Testing_Q_crash", new String[] { "crash" }));
+		
+		ret.add(new Feature("Testing_Q_All", new String[] { "black", "box", "unit", "text", "testing", "integration", "case", "fail", "pass", "coverge", "junit", "mistake", "debug", "crash"  }));
+		
+
+		ret.add(new Feature(true, "Testing_QA_black", new String[] { "black" }));
+		ret.add(new Feature(true, "Testing_QA_box", new String[] { "box" }));
+		ret.add(new Feature(true, "Testing_QA_unit", new String[] { "unit" }));
+		ret.add(new Feature(true, "Testing_QA_test", new String[] { "test" }));
+		ret.add(new Feature(true, "Testing_QA_testing", new String[] { "testing" }));
+		ret.add(new Feature(true, "Testing_QA_integration", new String[] { "integration" }));
+		ret.add(new Feature(true, "Testing_QA_case", new String[] { "case" }));
+		ret.add(new Feature(true, "Testing_QA_fail", new String[] { "fail" }));
+		ret.add(new Feature(true, "Testing_QA_pass", new String[] { "pass" }));
+		ret.add(new Feature(true, "Testing_QA_coverage", new String[] { "coverage" }));
+		ret.add(new Feature(true, "Testing_QA_junit", new String[] { "junit" }));
+		ret.add(new Feature(true, "Testing_QA_mistake", new String[] { "mistake" }));
+		ret.add(new Feature(true, "Testing_QA_debug", new String[] { "debug" }));
+		ret.add(new Feature(true, "Testing_QA_crash", new String[] { "crash" }));
+		
+		ret.add(new Feature(true, "Testing_QA_All", new String[] { "black", "box", "unit", "text", "testing", "integration", "case", "fail", "pass", "coverge", "junit", "mistake", "debug", "crash"  }));
+		
+		return ret;
+	}
+	
+	public List<Feature> AddCPPFeatures() {
+		List<Feature> ret = new ArrayList<Feature>();
+	
+		ret.add(new Feature("CPP_Q_*", new String[] { "*" }));
+		ret.add(new Feature("CPP_Q_&", new String[] { "&" }));
+		ret.add(new Feature("CPP_Q_private", new String[] { "private" }));
+		ret.add(new Feature("CPP_Q_public", new String[] { "public" }));
+		ret.add(new Feature("CPP_Q_inheritance", new String[] { "inheritance" }));
+		ret.add(new Feature("CPP_Q_operator", new String[] { "operator" }));
+		ret.add(new Feature("CPP_Q_overloading", new String[] { "overloading" }));
+		ret.add(new Feature("CPP_Q_reference", new String[] { "reference" }));
+		ret.add(new Feature("CPP_Q_stl", new String[] { "stl" }));
+		ret.add(new Feature("CPP_Q_std", new String[] { "std" }));
+		ret.add(new Feature("CPP_Q_namespace", new String[] { "namespace" }));
+		ret.add(new Feature("CPP_Q_volatile", new String[] { "volatile" }));
+		ret.add(new Feature("CPP_Q_virtual", new String[] { "virtual" }));
+		ret.add(new Feature("CPP_Q_::", new String[] { "::" }));
+		ret.add(new Feature("CPP_Q_ptr", new String[] { "ptr" }));
+		
+		ret.add(new Feature("CPP_Q_All", new String[] {  "::", "*", "&", "private", "public", "inheritance", "operator", "overloading", "reference", "stl", "std", "namespace", "volatile", "virtual", "ptr" }));
+		
+		ret.add(new Feature(true, "CPP_QA_*", new String[] { "*" }));
+		ret.add(new Feature(true, "CPP_QA_&", new String[] { "&" }));
+		ret.add(new Feature(true, "CPP_QA_private", new String[] { "private" }));
+		ret.add(new Feature(true, "CPP_QA_public", new String[] { "public" }));
+		ret.add(new Feature(true, "CPP_QA_inheritance", new String[] { "inheritance" }));
+		ret.add(new Feature(true, "CPP_QA_operator", new String[] { "operator" }));
+		ret.add(new Feature(true, "CPP_QA_overloading", new String[] { "overloading" }));
+		ret.add(new Feature(true, "CPP_QA_reference", new String[] { "reference" }));
+		ret.add(new Feature(true, "CPP_QA_stl", new String[] { "stl" }));
+		ret.add(new Feature(true, "CPP_QA_std", new String[] { "std" }));
+		ret.add(new Feature(true, "CPP_QA_namespace", new String[] { "namespace" }));
+		ret.add(new Feature(true, "CPP_QA_volatile", new String[] { "volatile" }));
+		ret.add(new Feature(true, "CPP_QA_virtual", new String[] { "virtual" }));
+		ret.add(new Feature(true, "CPP_QA_::", new String[] { "::" }));
+		ret.add(new Feature(true, "CPP_QA_ptr", new String[] { "ptr" }));
+		
+		ret.add(new Feature(true, "CPP_QA_All", new String[] {  "::", "*", "&", "private", "public", "inheritance", "operator", "overloading", "reference", "stl", "std", "namespace", "volatile", "virtual", "ptr" }));
+		
+		return ret;
+	}
+	
+	public List<Feature> AddDBFeatures() {
+		List<Feature> ret = new ArrayList<Feature>();
+	
+		ret.add(new Feature("DB_Q_sql", new String[] { "sql" }));
+		ret.add(new Feature("DB_Q_structured", new String[] { "structured" }));
+		ret.add(new Feature("DB_Q_query", new String[] { "query" }));
+		ret.add(new Feature("DB_Q_table", new String[] { "table" }));
+		ret.add(new Feature("DB_Q_database", new String[] { "database" }));
+		ret.add(new Feature("DB_Q_join", new String[] { "join" }));
+		ret.add(new Feature("DB_Q_select", new String[] { "select" }));
+		ret.add(new Feature("DB_Q_from", new String[] { "from" }));
+		ret.add(new Feature("DB_Q_where", new String[] { "where" }));
+		ret.add(new Feature("DB_Q_denormalization", new String[] { "denormalization" }));
+		
+		ret.add(new Feature("DB_Q_All", new String[] { "sql", "structured", "query", "table", "database", "join", "select", "from", "where", "denormalization" }));
+		
+		ret.add(new Feature(true, "DB_QA_sql", new String[] { "sql" }));
+		ret.add(new Feature(true, "DB_QA_structured", new String[] { "structured" }));
+		ret.add(new Feature(true, "DB_QA_query", new String[] { "query" }));
+		ret.add(new Feature(true, "DB_QA_table", new String[] { "table" }));
+		ret.add(new Feature(true, "DB_QA_database", new String[] { "database" }));
+		ret.add(new Feature(true, "DB_QA_join", new String[] { "join" }));
+		ret.add(new Feature(true, "DB_QA_select", new String[] { "select" }));
+		ret.add(new Feature(true, "DB_QA_from", new String[] { "from" }));
+		ret.add(new Feature(true, "DB_QA_where", new String[] { "where" }));
+		ret.add(new Feature(true, "DB_QA_denormalization", new String[] { "denormalization" }));
+		
+		ret.add(new Feature(true, "DB_QA_All", new String[] { "sql", "structured", "query", "table", "database", "join", "select", "from", "where", "denormalization" }));
+		
+		
+		return ret;
+	}
+	
+	public List<Feature> AddNetFeatures() {
+		List<Feature> ret = new ArrayList<Feature>();
+	
+		ret.add(new Feature("Net_Q_tcp", new String[] { "tcp" }));
+		ret.add(new Feature("Net_Q_get", new String[] { "get" }));
+		ret.add(new Feature("Net_Q_http", new String[] { "http" }));
+		ret.add(new Feature("Net_Q_socket", new String[] { "socket" }));
+		ret.add(new Feature("Net_Q_layer", new String[] { "layer" }));
+		ret.add(new Feature("Net_Q_session", new String[] { "session" }));
+		ret.add(new Feature("Net_Q_datalink", new String[] { "datalink" }));
+		ret.add(new Feature("Net_Q_bgp", new String[] { "bgp" }));
+		ret.add(new Feature("Net_Q_ospf", new String[] { "ospf" }));
+		ret.add(new Feature("Net_Q_rip", new String[] { "rip" }));
+		ret.add(new Feature("Net_Q_ip", new String[] { "ip" }));
+		ret.add(new Feature("Net_Q_ipv4", new String[] { "ipv4" }));
+		ret.add(new Feature("Net_Q_ipv6", new String[] { "ipv6" }));
+		ret.add(new Feature("Net_Q_package", new String[] { "package" }));
+		ret.add(new Feature("Net_Q_udp", new String[] { "udp" }));
+		ret.add(new Feature("Net_Q_ack", new String[] { "ack" }));
+		ret.add(new Feature("Net_Q_congestion", new String[] { "congestion" }));
+		
+		ret.add(new Feature("Net_Q_All", new String[] { "tcp", "get", "http", "socket", "layer", "session", "datalink", "bgp", "ospf", "rip", "ip", "ipv4", "ipv6", "package", "udp", "ack", "congestion" }));
+		
+		ret.add(new Feature(true, "Net_QA_tcp", new String[] { "tcp" }));
+		ret.add(new Feature(true, "Net_QA_get", new String[] { "get" }));
+		ret.add(new Feature(true, "Net_QA_http", new String[] { "http" }));
+		ret.add(new Feature(true, "Net_QA_socket", new String[] { "socket" }));
+		ret.add(new Feature(true, "Net_QA_layer", new String[] { "layer" }));
+		ret.add(new Feature(true, "Net_QA_session", new String[] { "session" }));
+		ret.add(new Feature(true, "Net_QA_datalink", new String[] { "datalink" }));
+		ret.add(new Feature(true, "Net_QA_bgp", new String[] { "bgp" }));
+		ret.add(new Feature(true, "Net_QA_ospf", new String[] { "ospf" }));
+		ret.add(new Feature(true, "Net_QA_rip", new String[] { "rip" }));
+		ret.add(new Feature(true, "Net_QA_ip", new String[] { "ip" }));
+		ret.add(new Feature(true, "Net_QA_ipv4", new String[] { "ipv4" }));
+		ret.add(new Feature(true, "Net_QA_ipv6", new String[] { "ipv6" }));
+		ret.add(new Feature(true, "Net_QA_package", new String[] { "package" }));
+		ret.add(new Feature(true, "Net_QA_udp", new String[] { "udp" }));
+		ret.add(new Feature(true, "Net_QA_ack", new String[] { "ack" }));
+		ret.add(new Feature(true, "Net_QA_congestion", new String[] { "congestion" }));
+		
+		ret.add(new Feature(true, "Net_QA_All", new String[] { "tcp", "get", "http", "socket", "layer", "session", "datalink", "bgp", "ospf", "rip", "ip", "ipv4", "ipv6", "package", "udp", "ack", "congestion" }));
+		
+		
+		return ret;
+	}
+	
+	public List<Feature> AddThreadsFeatures() {
+		List<Feature> ret = new ArrayList<Feature>();
+	
+		ret.add(new Feature("Thread_Q_deadlock", new String[] { "deadlock" }));
+		ret.add(new Feature("Thread_Q_mutual", new String[] { "mutual" }));
+		ret.add(new Feature("Thread_Q_mutex", new String[] { "mutex" }));
+		ret.add(new Feature("Thread_Q_wait", new String[] { "wait" }));
+		ret.add(new Feature("Thread_Q_hold", new String[] { "hold" }));
+		ret.add(new Feature("Thread_Q_runnable", new String[] { "runnable" }));
+		ret.add(new Feature("Thread_Q_semaphore", new String[] { "semaphore" }));
+		ret.add(new Feature("Thread_Q_thread", new String[] { "thread" }));
+		ret.add(new Feature("Thread_Q_release", new String[] { "release" }));
+		ret.add(new Feature("Thread_Q_synchronize", new String[] { "synchronize" }));
+		
+		ret.add(new Feature("Thread_Q_All", new String[] { "deadlock", "mutual", "mutex", "wait", "hold", "runnable", "semaphore", "thread", "release", "synchronize"
+ }));
+		
+		ret.add(new Feature(true, "Thread_QA_deadlock", new String[] { "deadlock" }));
+		ret.add(new Feature(true, "Thread_QA_mutual", new String[] { "mutual" }));
+		ret.add(new Feature(true, "Thread_QA_mutex", new String[] { "mutex" }));
+		ret.add(new Feature(true, "Thread_QA_wait", new String[] { "wait" }));
+		ret.add(new Feature(true, "Thread_QA_hold", new String[] { "hold" }));
+		ret.add(new Feature(true, "Thread_QA_runnable", new String[] { "runnable" }));
+		ret.add(new Feature(true, "Thread_QA_semaphore", new String[] { "semaphore" }));
+		ret.add(new Feature(true, "Thread_QA_thread", new String[] { "thread" }));
+		ret.add(new Feature(true, "Thread_QA_release", new String[] { "release" }));
+		ret.add(new Feature(true, "Thread_QA_synchronize", new String[] { "synchronize" }));
+		
+		ret.add(new Feature(true, "Thread_QA_All", new String[] { "deadlock", "mutual", "mutex", "wait", "hold", "runnable", "semaphore", "thread", "release", "synchronize"
+ }));
+		
+		return ret;
+	}
 }

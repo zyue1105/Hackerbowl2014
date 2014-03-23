@@ -10,9 +10,9 @@ public class Classes {
 		map.put("Algorithm", "Algorithm");
 		map.put("Array & String", "Data Structure");
 		map.put("Bit Manipulation", "Algorithm");
-		map.put("Brain Teaser", "Knowlege Based");
+		map.put("Brain Teaser", "Knowledge Based");
 		map.put("C++", "Programming Language");
-		map.put("DataBase", "Knowlege Based");
+		map.put("DataBase", "Knowledge Based");
 		map.put("Java", "Programming Language");
 		map.put("Linked List", "Data Structure");
 		map.put("Mathematical and Computing", "Algorithm");

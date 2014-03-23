@@ -27,7 +27,7 @@ public class Experiment {
 
 	public static void main(String[] args) throws IOException {
 		buildRootNode();
-		buildFromFiles(new String[] {"amazon", "microsoft"});
+		buildFromFiles(new String[] {"amazon", "microsoft", "google", "facebook"});
 		outputToFile();
 	}
 

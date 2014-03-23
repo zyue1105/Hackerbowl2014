@@ -7,6 +7,9 @@ package Question;
 //import Feature.TreeAndArrayFeature;
 //import Feature.TreeGraphFeature;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import Feature.FeatureList;
 import Feature.TotalFeature;
 
@@ -16,6 +19,7 @@ public class Question implements Comparable<Question> {
 	private Integer Answers = 0;
 	private TotalFeature arrayFeature = new TotalFeature();
 	private String location = "";
+	private List<String> classes = new ArrayList<String>();
 
 	public Question(String question, String answers) {
 		title = question;
@@ -59,6 +63,18 @@ public class Question implements Comparable<Question> {
 	
 	public String getUrl() {
 		return location;
+	}
+	
+	public List<String> getClasses() {
+		return classes;
+	}
+	
+	public void addClass(String m_class) {
+		classes.add(m_class);
+	}
+	
+	public void addClasses(List<String> classes) {
+		(this.classes).addAll(classes);
 	}
 	
 	public FeatureList getFeature() {

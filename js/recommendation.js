@@ -1,12 +1,12 @@
   
 function recommend() 
 {
-  text = "Matlab CSS, Lax Microsoft.  Visual Studio Amazon EC2 Xperf Git";
+  pdf2text = "Matlab CSS, Lax Microsoft.  Visual Studio Amazon EC2 Xperf Git";
 
-  console.log(text);
+  console.log(pdf2text);
   
   // split text into words
-  words = text.split(/[.,\/ -]/);
+  words = pdf2text.split(/[.,\/ -]/);
   
   // deduplicate
   var uniqueWords = [];
@@ -14,7 +14,7 @@ function recommend()
     return words.indexOf(element) == pos;
   })
   
-  for (var i in uiqueWords) {
+  for (var i in uniqueWords) {
     if (uniqueWords[i] in dict) {
       
     }

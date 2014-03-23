@@ -13,6 +13,6 @@ public class WordFrequency implements Comparable<WordFrequency>  {
         if(this.count==otherWord.count){
             return this.name.compareTo(otherWord.name);
         }
-        return (otherWord.count-this.count);
+        return otherWord.count-this.count;
     }
 }

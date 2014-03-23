@@ -280,4 +280,150 @@ public class AddFeatures {
 
 		return ret;
 	}
+	
+	public List<Feature> AddOODFeatures() {
+		List<Feature> ret = new ArrayList<Feature>();
+		ret.add(new Feature("OOD_Q_object", new String[] { "object" }));
+		ret.add(new Feature("OOD_Q_oriented", new String[] { "oriented" }));
+		ret.add(new Feature("OOD_Q_design", new String[] { "design" }));
+		ret.add(new Feature("OOD_Q_class", new String[] { "class" }));
+		ret.add(new Feature("OOD_Q_OOD", new String[] { "OOD" }));
+		ret.add(new Feature("OOD_Q_type", new String[] { "type" }));
+		ret.add(new Feature("OOD_Q_UML", new String[] { "UML" }));
+		ret.add(new Feature("OOD_Q_card", new String[] { "card" }));
+		ret.add(new Feature("OOD_Q_deck", new String[] { "deck" }));
+		ret.add(new Feature("OOD_Q_phone", new String[] { "phone" }));
+		ret.add(new Feature("OOD_Q_number", new String[] { "number" }));
+		ret.add(new Feature("OOD_Q_parking", new String[] { "parking" }));
+		ret.add(new Feature("OOD_Q_method", new String[] { "method" }));
+		ret.add(new Feature("OOD_Q_goal", new String[] { "goal" }));
+		ret.add(new Feature("OOD_Q_subclass", new String[] { "subclass" }));
+		ret.add(new Feature("OOD_Q_extend", new String[] { "extend" }));
+		ret.add(new Feature("OOD_Q_implement", new String[] { "implement" }));
+		ret.add(new Feature("OOD_Q_puzzle", new String[] { "puzzle" }));
+		ret.add(new Feature("OOD_Q_system", new String[] { "system" }));
+		
+		ret.add(new Feature("OOD_Q_All", new String[] {"object", "oriented", "design", "class", "OOD", "type", "UML", "card", "deck", "phone", "number", "parking", "method", "goal", "subclass", "extend", "implement", "puzzle",  "system"}));
+		
+		ret.add(new Feature(true,"OOD_QA_object", new String[] { "object" }));
+		ret.add(new Feature(true,"OOD_QA_oriented", new String[] { "oriented" }));
+		ret.add(new Feature(true,"OOD_QA_design", new String[] { "design" }));
+		ret.add(new Feature(true,"OOD_QA_class", new String[] { "class" }));
+		ret.add(new Feature(true,"OOD_QA_OOD", new String[] { "OOD" }));
+		ret.add(new Feature(true,"OOD_QA_type", new String[] { "type" }));
+		ret.add(new Feature(true,"OOD_QA_UML", new String[] { "UML" }));
+		ret.add(new Feature(true,"OOD_QA_card", new String[] { "card" }));
+		ret.add(new Feature(true,"OOD_QA_deck", new String[] { "deck" }));
+		ret.add(new Feature(true,"OOD_QA_phone", new String[] { "phone" }));
+		ret.add(new Feature(true,"OOD_QA_number", new String[] { "number" }));
+		ret.add(new Feature(true,"OOD_QA_parking", new String[] { "parking" }));
+		ret.add(new Feature(true,"OOD_QA_method", new String[] { "method" }));
+		ret.add(new Feature(true,"OOD_QA_goal", new String[] { "goal" }));
+		ret.add(new Feature(true,"OOD_QA_subclass", new String[] { "subclass" }));
+		ret.add(new Feature(true,"OOD_QA_extend", new String[] { "extend" }));
+		ret.add(new Feature(true,"OOD_QA_implement", new String[] { "implement" }));
+		ret.add(new Feature(true,"OOD_QA_puzzle", new String[] { "puzzle" }));
+		ret.add(new Feature(true,"OOD_QA_system", new String[] { "system" }));
+		
+		ret.add(new Feature(true, "OOD_QA_All", new String[] {"object", "oriented", "design", "class", "OOD", "type", "UML", "card", "deck", "phone", "number", "parking", "method", "goal", "subclass", "extend", "implement", "puzzle",  "system"}));
+
+		return ret;
+	}
+	
+	public List<Feature> AddRecursionFeatures() {
+		List<Feature> ret = new ArrayList<Feature>();
+		ret.add(new Feature("Recursion_Q_recursion", new String[] { "recursion" }));
+		ret.add(new Feature("Recursion_Q_recursive", new String[] { "recursive" }));
+		ret.add(new Feature("Recursion_Q_sub-problem", new String[] { "sub-problem" }));
+		ret.add(new Feature("Recursion_Q_f(n)", new String[] { "f(n)" }));
+		ret.add(new Feature("Recursion_Q_bottom-up", new String[] { "bottom-up" }));
+		ret.add(new Feature("Recursion_Q_top-down", new String[] { "top-down" }));
+		ret.add(new Feature("Recursion_Q_fibonacci", new String[] { "fibonacci" }));
+		ret.add(new Feature("Recursion_Q_robot", new String[] { "robot" }));
+		ret.add(new Feature("Recursion_Q_subset", new String[] { "subset" }));
+		ret.add(new Feature("Recursion_Q_permutation", new String[] { "permutation" }));
+		ret.add(new Feature("Recursion_Q_parentheses", new String[] { "parentheses" }));
+		
+		ret.add(new Feature("StackQueue_Q_All", new String[] { "recursion", "recursive", "sub-problem", "f(n)", "bottom-up", "top-down", "fibonacci", "robot", "subset", "permutation", "parentheses" }));
+		
+		ret.add(new Feature(true, "Recursion_QA_recursion", new String[] { "recursion" }));
+		ret.add(new Feature(true, "Recursion_QA_recursive", new String[] { "recursive" }));
+		ret.add(new Feature(true, "Recursion_QA_sub-problem", new String[] { "sub-problem" }));
+		ret.add(new Feature(true, "Recursion_QA_f(n)", new String[] { "f(n)" }));
+		ret.add(new Feature(true, "Recursion_QA_bottom-up", new String[] { "bottom-up" }));
+		ret.add(new Feature(true, "Recursion_QA_top-down", new String[] { "top-down" }));
+		ret.add(new Feature(true, "Recursion_QA_fibonacci", new String[] { "fibonacci" }));
+		ret.add(new Feature(true, "Recursion_QA_robot", new String[] { "robot" }));
+		ret.add(new Feature(true, "Recursion_QA_subset", new String[] { "subset" }));
+		ret.add(new Feature(true, "Recursion_QA_permutation", new String[] { "permutation" }));
+		ret.add(new Feature(true, "Recursion_QA_parentheses", new String[] { "parentheses" }));
+		
+		ret.add(new Feature(true, "StackQueue_QA_All", new String[] { "recursion", "recursive", "sub-problem", "f(n)", "bottom-up", "top-down", "fibonacci", "robot", "subset", "permutation", "parentheses" }));
+		
+		return ret;
+	}
+	
+	public List<Feature> AddSortSearchFeatures() {
+		List<Feature> ret = new ArrayList<Feature>();
+		
+		ret.add(new Feature("SortSearch_Q_sort", new String[] { "sort" }));
+		ret.add(new Feature("SortSearch_Q_sorted", new String[] { "sorted" }));
+		ret.add(new Feature("SortSearch_Q_sorting", new String[] { "sorting" }));
+		ret.add(new Feature("SortSearch_Q_unsorted", new String[] { "unsorted" }));
+		ret.add(new Feature("SortSearch_Q_bubble", new String[] { "bubble" }));
+		ret.add(new Feature("SortSearch_Q_selection", new String[] { "selection" }));
+		ret.add(new Feature("SortSearch_Q_merge", new String[] { "merge" }));
+		ret.add(new Feature("SortSearch_Q_mergesort", new String[] { "mergesort" }));
+		ret.add(new Feature("SortSearch_Q_quicksort", new String[] { "quicksort" }));
+		ret.add(new Feature("SortSearch_Q_bucketsort", new String[] { "bucketsort" }));
+		ret.add(new Feature("SortSearch_Q_bucket", new String[] { "bucket" }));
+		ret.add(new Feature("SortSearch_Q_search", new String[] { "search" }));
+
+		ret.add(new Feature("SortSearch_QA_All", new String[] { "sort", "sorted", "sorting", "unsorted", "bubble", "selection", "merge", "mergesort", "quicksort", "bucketsort", "bucket", "search" }));
+		
+		ret.add(new Feature(true, "SortSearch_QA_sort", new String[] { "sort" }));
+		ret.add(new Feature(true, "SortSearch_QA_sorted", new String[] { "sorted" }));
+		ret.add(new Feature(true, "SortSearch_QA_sorting", new String[] { "sorting" }));
+		ret.add(new Feature(true, "SortSearch_QA_unsorted", new String[] { "unsorted" }));
+		ret.add(new Feature(true, "SortSearch_QA_bubble", new String[] { "bubble" }));
+		ret.add(new Feature(true, "SortSearch_QA_selection", new String[] { "selection" }));
+		ret.add(new Feature(true, "SortSearch_QA_merge", new String[] { "merge" }));
+		ret.add(new Feature(true, "SortSearch_QA_mergesort", new String[] { "mergesort" }));
+		ret.add(new Feature(true, "SortSearch_QA_quicksort", new String[] { "quicksort" }));
+		ret.add(new Feature(true, "SortSearch_QA_bucketsort", new String[] { "bucketsort" }));
+		ret.add(new Feature(true, "SortSearch_QA_bucket", new String[] { "bucket" }));
+		ret.add(new Feature(true, "SortSearch_QA_search", new String[] { "search" }));
+
+		ret.add(new Feature(true, "SortSearch_QA_All", new String[] { "sort", "sorted", "sorting", "unsorted", "bubble", "selection", "merge", "mergesort", "quicksort", "bucketsort", "bucket", "search" }));
+
+		return ret;
+	}
+	
+	public List<Feature> AddJavaFeatures() {
+		List<Feature> ret = new ArrayList<Feature>();
+	
+		ret.add(new Feature("Java_Q_interface", new String[] { "interface" }));
+		ret.add(new Feature("Java_Q_extends", new String[] { "extends" }));
+		ret.add(new Feature("Java_Q_inheritance", new String[] { "inheritance" }));
+		ret.add(new Feature("Java_Q_abstract", new String[] { "abstract" }));
+		ret.add(new Feature("Java_Q_final", new String[] { "final" }));
+		ret.add(new Feature("Java_Q_try", new String[] { "try" }));
+		ret.add(new Feature("Java_Q_catch", new String[] { "catch" }));
+		ret.add(new Feature("Java_Q_import", new String[] { "import" }));
+		ret.add(new Feature("Java_Q_package", new String[] { "package" }));
+		ret.add(new Feature("Java_Q_java", new String[] { "java" }));
+		ret.add(new Feature("Java_Q_All", new String[] { "interface", "extends", "inheritance", "abstract", "final", "try", "catch", "import", "package", "java"  }));
+		
+        ret.add(new Feature(true,"Java_QA_interface", new String[] { "interface" }));
+		ret.add(new Feature(true,"Java_QA_extends", new String[] { "extends" }));
+		ret.add(new Feature(true,"Java_QA_inheritance", new String[] { "inheritance" }));
+		ret.add(new Feature(true,"Java_QA_abstract", new String[] { "abstract" }));
+		ret.add(new Feature(true,"Java_QA_final", new String[] { "final" }));
+		ret.add(new Feature(true,"Java_QA_try", new String[] { "try" }));
+		ret.add(new Feature(true,"Java_QA_catch", new String[] { "catch" }));
+		ret.add(new Feature(true,"Java_QA_import", new String[] { "import" }));
+		ret.add(new Feature(true,"Java_QA_All", new String[] { "interface", "extends", "inheritance", "abstract", "final", "try", "catch", "import", "package", "java"  }));
+		
+		return ret;
+	}
 }

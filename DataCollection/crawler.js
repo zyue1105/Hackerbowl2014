@@ -9,7 +9,37 @@ function setup()
   //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=trees-and-graphs-interview-questions&sort=comments";
   //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=system-design-interview-questions&sort=comments";
   //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=brain-teasers-interview-questions&sort=comments";
-  var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=object-oriented-design-interview-questions&sort=comments";
+  //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=object-oriented-design-interview-questions&sort=comments";
+  
+  // Amazon--Testing:
+  var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=testing-interview-questions&sort=comments";
+
+  // Amazon--Database:
+  //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=database-interview-questions&sort=comments";
+
+  // Amazon--Java:
+  //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=java-interview-questions&sort=comments";
+
+  // Amazon--BitManipulation
+  //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=bit-manipulation-interview-questions&sort=comments";
+  
+  // Amazon--C++
+  //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=c-plus-plus-interview-questions&sort=comments";
+  
+  // Amazon--LinkedList
+  //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=linked-lists-interview-questions&sort=comments";
+  
+  // Amazon--Algorithm
+  //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=algorithm-interview-questions&sort=comments";
+
+  // Amazon--Math
+  //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=math-computation-interview-questions&sort=comments";
+  
+  // Amazon--Network
+  //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=networking-web-internet-interview-questions&sort=comments";
+  
+  // Amazon--OOD
+  //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=object-oriented-design-interview-questions&sort=comments";
   
   getMetadata(url, "getDetail");
 }

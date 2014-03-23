@@ -4,8 +4,6 @@ Amazon--Database:
 http://www.careercup.com/page?pid=amazon-interview-questions&topic=database-interview-questions&sort=comments
 Amazon--Java:
 http://www.careercup.com/page?pid=amazon-interview-questions&topic=java-interview-questions&sort=comments
-Amazon--Algorithm
-http://www.careercup.com/page?pid=amazon-interview-questions&topic=java-interview-questions&sort=comments
 Amazon--BitManipulation
 http://www.careercup.com/page?pid=amazon-interview-questions&topic=bit-manipulation-interview-questions&sort=comments
 Amazon--C++

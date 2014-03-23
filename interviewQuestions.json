@@ -176,7 +176,15 @@
             "name": "Data Structure",
             "children": [{
                 "name": "Arrays and Strings",
-                "size": 7074
+                "size": 7074,
+                "children": [{
+                    "name": "test question",
+                    "votes": 0,
+                    "answersCount": 158,
+                    "location": "http://www.careercup.com/question?id=7528760",
+                    "title":"If [a1,a2,a3...,an,b1,b2...bn] is given input change this to [a1,b1,a2,b2.....an,bn] , solution should be in-place"
+                }
+                ]
             }, {
                 "name": "Linked Lists",
                 "size": 7074
@@ -352,7 +360,9 @@
         "name": "Yahoo",
         "children": [{
             "name": "FlareVis",
-            "size": 4116
+            "size": 1000,
+            "location": "http://www.careercup.com/question?id=7528760",
+            "votes": 12
         }]
     }, {
         "name": "Google",

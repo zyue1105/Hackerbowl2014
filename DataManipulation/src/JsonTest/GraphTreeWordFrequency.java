@@ -16,8 +16,8 @@ import org.json.simple.parser.JSONParser;
 public class GraphTreeWordFrequency {
 	private final static String QuestionList = "interview_questions_list";
 	private final static String Question = "interview_questions";
-	private final static String QuestionDescription = "title"
-	;
+	private final static String QuestionDescription = "title";
+	
 	public static void main(String[] args) throws IOException, ParseException {
 		Reader file = new FileReader(
 				"C:\\Users\\Yin\\Documents\\GitHub\\Hackerbowl2014\\DataSample\\tree_graph.json");

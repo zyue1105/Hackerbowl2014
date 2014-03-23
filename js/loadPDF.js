@@ -59,7 +59,7 @@ function onFileLoad(e) {
             layers.push(nodes[j].textContent + "\n");
           }
           pdf2text = layers.join("\n");
-          recommend(pdf2text);
+          recommend();
                         
         }, 1000);
       }

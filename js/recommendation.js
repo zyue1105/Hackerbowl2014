@@ -1,5 +1,5 @@
   
-function recommend(var text) 
+function recommend() 
 {
   text = "Matlab CSS, Lax Microsoft.  Visual Studio Amazon EC2 Xperf Git";
 

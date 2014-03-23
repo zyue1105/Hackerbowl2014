@@ -12,7 +12,7 @@ function setup()
   //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=object-oriented-design-interview-questions&sort=comments";
   
   // Amazon--Testing:
-  var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=testing-interview-questions&sort=comments";
+  //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=testing-interview-questions&sort=comments";
 
   // Amazon--Database:
   //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=database-interview-questions&sort=comments";
@@ -41,7 +41,10 @@ function setup()
   // Amazon--OOD
   //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=object-oriented-design-interview-questions&sort=comments";
   
-  getMetadata(url, "getDetail");
+  for (var i = 1; i < 10; ++i) {    
+    var url = "http://www.careercup.com/page?pid=facebook-interview-questions&n=" + i;
+    getMetadata(url, "getDetail");
+  }
 }
 
 /**

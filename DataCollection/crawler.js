@@ -7,7 +7,9 @@ function setup()
     
   //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=arrays-interview-questions&sort=comments";
   //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=trees-and-graphs-interview-questions&sort=comments";
-  var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=system-design-interview-questions&sort=comments";
+  //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=system-design-interview-questions&sort=comments";
+  //var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=brain-teasers-interview-questions&sort=comments";
+  var url = "http://www.careercup.com/page?pid=amazon-interview-questions&topic=object-oriented-design-interview-questions&sort=comments";
   
   getMetadata(url, "getDetail");
 }

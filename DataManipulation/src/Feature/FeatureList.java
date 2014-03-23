@@ -53,9 +53,7 @@ public class FeatureList {
 	}
 
 	public void outputOriginalToConsole() {
-		printHead();
 		printValue();
-		System.out.println();
 	}
 
 	public void outputOriginalToFile(String fileName) {
@@ -63,14 +61,12 @@ public class FeatureList {
 	}
 
 	public void outputNormalizedToConsole() {
-//		printHead();
-//		printNValue();
-//		System.out.println();
-		int size = features.size();
-		List<Double> values = getNormalizedVector();
-		for (int index = 0; index < size; index++) {
-			System.out.println(features.get(index).getFeatureName() + "\t" + features.get(index).getFeatureValue() + "\t" + values.get(index));
-		}
+		printNValue();
+//		int size = features.size();
+//		List<Double> values = getNormalizedVector();
+//		for (int index = 0; index < size; index++) {
+//			System.out.println(features.get(index).getFeatureName() + "\t" + features.get(index).getFeatureValue() + "\t" + values.get(index));
+//		}
 	}
 
 	public void outputNormalizedToFile(String fileName) {
@@ -86,14 +82,14 @@ public class FeatureList {
 	
 	public void printValue() {
 		for (Feature feature : features) {
-			System.out.print(String.format("%.2f\t\t\t",feature.getFeatureValue()));
+			System.out.print(String.format("%.2f\t",feature.getFeatureValue()));
 		}
 		System.out.println();
 	}
 	
 	public void printNValue() {
 		for (Double value : getNormalizedVector()) {
-			System.out.print(String.format("%.2f\t\t\t",value));
+			System.out.print(String.format("%.2f\t",value));
 		}
 		System.out.println();
 	}

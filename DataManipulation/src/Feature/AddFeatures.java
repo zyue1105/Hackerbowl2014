@@ -505,6 +505,7 @@ public class AddFeatures {
 	public List<Feature> AddCPPFeatures() {
 		List<Feature> ret = new ArrayList<Feature>();
 	
+		ret.add(new Feature("CPP_Q_C++", new String[] { "C++" }));
 		ret.add(new Feature("CPP_Q_*", new String[] { "*" }));
 		ret.add(new Feature("CPP_Q_&", new String[] { "&" }));
 		ret.add(new Feature("CPP_Q_private", new String[] { "private" }));
@@ -521,8 +522,9 @@ public class AddFeatures {
 		ret.add(new Feature("CPP_Q_::", new String[] { "::" }));
 		ret.add(new Feature("CPP_Q_ptr", new String[] { "ptr" }));
 		
-		ret.add(new Feature("CPP_Q_All", new String[] {  "::", "*", "&", "private", "public", "inheritance", "operator", "overloading", "reference", "stl", "std", "namespace", "volatile", "virtual", "ptr" }));
+		ret.add(new Feature("CPP_Q_All", new String[] {  "C++", "::", "*", "&", "private", "public", "inheritance", "operator", "overloading", "reference", "stl", "std", "namespace", "volatile", "virtual", "ptr" }));
 		
+		ret.add(new Feature(true, "CPP_QA_C++", new String[] { "C++" }));
 		ret.add(new Feature(true, "CPP_QA_*", new String[] { "*" }));
 		ret.add(new Feature(true, "CPP_QA_&", new String[] { "&" }));
 		ret.add(new Feature(true, "CPP_QA_private", new String[] { "private" }));
@@ -539,7 +541,7 @@ public class AddFeatures {
 		ret.add(new Feature(true, "CPP_QA_::", new String[] { "::" }));
 		ret.add(new Feature(true, "CPP_QA_ptr", new String[] { "ptr" }));
 		
-		ret.add(new Feature(true, "CPP_QA_All", new String[] {  "::", "*", "&", "private", "public", "inheritance", "operator", "overloading", "reference", "stl", "std", "namespace", "volatile", "virtual", "ptr" }));
+		ret.add(new Feature(true, "CPP_QA_All", new String[] { "C++", "::", "*", "&", "private", "public", "inheritance", "operator", "overloading", "reference", "stl", "std", "namespace", "volatile", "virtual", "ptr" }));
 		
 		return ret;
 	}
@@ -580,6 +582,7 @@ public class AddFeatures {
 	public List<Feature> AddNetFeatures() {
 		List<Feature> ret = new ArrayList<Feature>();
 	
+		ret.add(new Feature("Net_Q_network", new String[] { "network" }));
 		ret.add(new Feature("Net_Q_tcp", new String[] { "tcp" }));
 		ret.add(new Feature("Net_Q_get", new String[] { "get" }));
 		ret.add(new Feature("Net_Q_http", new String[] { "http" }));
@@ -598,8 +601,9 @@ public class AddFeatures {
 		ret.add(new Feature("Net_Q_ack", new String[] { "ack" }));
 		ret.add(new Feature("Net_Q_congestion", new String[] { "congestion" }));
 		
-		ret.add(new Feature("Net_Q_All", new String[] { "tcp", "get", "http", "socket", "layer", "session", "datalink", "bgp", "ospf", "rip", "ip", "ipv4", "ipv6", "package", "udp", "ack", "congestion" }));
+		ret.add(new Feature("Net_Q_All", new String[] { "network", "tcp", "get", "http", "socket", "layer", "session", "datalink", "bgp", "ospf", "rip", "ip", "ipv4", "ipv6", "package", "udp", "ack", "congestion" }));
 		
+		ret.add(new Feature(true, "Net_QA_network", new String[] { "network" }));
 		ret.add(new Feature(true, "Net_QA_tcp", new String[] { "tcp" }));
 		ret.add(new Feature(true, "Net_QA_get", new String[] { "get" }));
 		ret.add(new Feature(true, "Net_QA_http", new String[] { "http" }));
@@ -618,7 +622,7 @@ public class AddFeatures {
 		ret.add(new Feature(true, "Net_QA_ack", new String[] { "ack" }));
 		ret.add(new Feature(true, "Net_QA_congestion", new String[] { "congestion" }));
 		
-		ret.add(new Feature(true, "Net_QA_All", new String[] { "tcp", "get", "http", "socket", "layer", "session", "datalink", "bgp", "ospf", "rip", "ip", "ipv4", "ipv6", "package", "udp", "ack", "congestion" }));
+		ret.add(new Feature(true, "Net_QA_All", new String[] { "network", "tcp", "get", "http", "socket", "layer", "session", "datalink", "bgp", "ospf", "rip", "ip", "ipv4", "ipv6", "package", "udp", "ack", "congestion" }));
 		
 		
 		return ret;

@@ -18,45 +18,7 @@ import Question.QuestionBuilder;
 
 public class Output {
 	private final static String path = "C:\\Users\\Yin\\Documents\\GitHub\\Hackerbowl2014\\DataSample\\";
-	private final static String Answers = "interview_question_comments";
-	private final static String Question = "question";
-	private final static String QuestionDescription = "title";
-	
-	public static JSONArray generateJSONArray(String fileName) throws IOException, ParseException {
-		Reader file = new FileReader(fileName);
-		JSONParser parser = new JSONParser();
-		JSONArray array = (JSONArray) parser.parse(file);
-		file.close();
-		return array;
-	}
-	
-	public static String getQuestionDescription(JSONObject questionEntry) {
-		JSONObject question = getQuestion(questionEntry);
-		return (String) question.get(QuestionDescription);
-	}
-	
-	public static JSONObject getQuestion(JSONObject questionEntry) {
-		JSONObject question = (JSONObject)questionEntry.get(Question);
-		return question;
-	}
-	
-	public static JSONArray getQuestionComments(JSONObject questionEntry) {
-		JSONObject question = getQuestion(questionEntry);
-		return (JSONArray) question.get(Answers);
-	}
-	
-	public static String getQuestionCommentsDescription(JSONObject questionEntry) {
-		JSONArray comments = getQuestionComments(questionEntry);
-		if (comments == null) {
-			return "";
-		}
-		String commentsString = "";
-		for (Object comment : comments) {
-			commentsString += " " + (String)((JSONObject) comment).get(QuestionDescription);
-		}
-		return commentsString;
-	}
-	
+		
 	@SuppressWarnings("unchecked")
 	public static JSONArray createAmazon(String[] files, String[] classString) throws IOException, ParseException {
 		JSONArray amazon = new JSONArray();

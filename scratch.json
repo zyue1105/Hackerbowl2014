@@ -1,0 +1,442 @@
+{
+   "name":"Campany",
+   "children":[
+      {
+         "name":"Amazon",
+         "children":[
+            {
+               "name":"Algorithm",
+               "children":[
+                  {
+                     "title":"If [a1,a2,a3...,an,b1,b2...bn] is given input change this to [a1,b1,a2,b2.....an,bn] , solution should be in-place",
+                     "answerCount":158,
+                     "location":"http:\/\/www.careercup.com\/question?id=7528760",
+                     "name":"Question #1",
+                     "votes":0
+                  },
+                  {
+                     "title":"find the longest palindrome in a string?",
+                     "answerCount":143,
+                     "location":"http:\/\/www.careercup.com\/question?id=245679",
+                     "name":"Question #2",
+                     "votes":0
+                  },
+                  {
+                     "title":"Simulate a seven-sided die using only five-sided",
+                     "answerCount":101,
+                     "location":"http:\/\/www.careercup.com\/question?id=3043",
+                     "name":"Question #3",
+                     "votes":2
+                  },
+                  {
+                     "title":"You are given an array ' containing 0s and 1s. Find O(n) time and O(1) space algorithm to find the maximum sub sequence which has equal number of 1s and 0s.  Examples 1) 10101010 The longest sub sequence that satisfies the problem is the input itself  2)1101000 The longest sub sequence that satisfies the problem is 110100",
+                     "answerCount":100,
+                     "location":"http:\/\/www.careercup.com\/question?id=3576940",
+                     "name":"Question #4",
+                     "votes":0
+                  },
+                  {
+                     "title":"Given a circular single linked list.Write a program that deletes every kth node until only one node is left. After kth node is deleted, start the procedure from (k+1)th node. e.g.list is 1->2->3->4->5->1 k=3 1. You are at 1, delete 3. List is: 1->2->4->5->1 2. You are at 4, delete 1 List is: 2->4->5->2 3. You are at 2,delete 5 List is: 2->4->2 4. You are at 2, delete 2 List is: 4 Return 4.  How efficient you can do it?",
+                     "answerCount":90,
+                     "location":"http:\/\/www.careercup.com\/question?id=14467673",
+                     "name":"Question #5",
+                     "votes":1
+                  },
+                  {
+                     "title":"Consider a series in which 8 teams are participating. each team plays twice with all other teams. 4 of them will go to the semi final.How many matches should a team win, so that it will ensure that it will go to semi finals.?",
+                     "answerCount":87,
+                     "location":"http:\/\/www.careercup.com\/question?id=9119235",
+                     "name":"Question #6",
+                     "votes":1
+                  },
+                  {
+                     "title":"String Reduction  Given a string consisting of a,b and c's, we can perform the following operation: Take any two adjacent distinct characters and replace it with the third character. For example, if 'a' and 'c' are adjacent, they can replaced with 'b'. What is the smallest string which can result by applying this operation repeatedly?  Input: The first line contains the number of test cases T. T test cases follow. Each case contains the string you start with.  Output: Output T lines, one for each test case containing the smallest length of the resultant string after applying the operations optimally.  Constraints: 1 <= T <= 100 The string will have at most 100 characters.  Sample Input: 3 cab bcab ccccc  Sample Output: 2 1 5  Explanation: For the first case, you can either get cab -> cc or cab -> bb, resulting in a string of length 2. For the second case, one optimal solution is: bcab -> aab -> ac -> b. No more operations can be applied and the resultant string has length 1. For the third case, no operations can be performed and so the answer is 5.",
+                     "answerCount":86,
+                     "location":"http:\/\/www.careercup.com\/question?id=12718665",
+                     "name":"Question #7",
+                     "votes":0
+                  },
+                  {
+                     "title":"Q1.- Written exam (Amazon, Bangalore)  Given a singly link list and a number 'K', swap the Kth node from the start with the Kth node from the last. Check all the edge cases.  Sample Input: 1->2->3->4->5->6->7->8 and K = 3 Sample Output : 1->2->6->4->5->3->7->8  Sample Input: 1->2->3->4->5->6->7->8 and K = 10 Sample Output: print error \"LIST IS OF LESSER SIZE\".",
+                     "answerCount":82,
+                     "location":"http:\/\/www.careercup.com\/question?id=13575664",
+                     "name":"Question #8",
+                     "votes":3
+                  },
+                  {
+                     "title":"You have given a positive  number you have to find a number which is bigger than that by using same digits available in the number . Example :- You have given a number 7585 , your output should be 7855 .",
+                     "answerCount":82,
+                     "location":"http:\/\/www.careercup.com\/question?id=10676884",
+                     "name":"Question #9",
+                     "votes":0
+                  },
+                  {
+                     "title":"1. How to find whether two link-lists intersect each other or not? If yes find intersection point.",
+                     "answerCount":80,
+                     "location":"http:\/\/www.careercup.com\/question?id=7578666",
+                     "name":"Question #10",
+                     "votes":0
+                  },
+                  {
+                     "title":"there are two arrays named A and B , both of them with k size, they are sorted in acsending order. could you find k-th  smallest combinations of ai, bj -->(ai+bj) . 0<=i,j for example: a = {1, 3, 6} b = {4, 5, 6} then we will get 1 + 4 = 5, 1 + 5 = 6, and 1 + 6 = 7,the result is 5,6,7. does it make you understood? and could anybody do it with less time and space complexity.  Hi guys, thanks for all your suggestions and idea, and finally I get my answer and here are my c++ codes, time complexity is O(k*lgk), and space complexity is O(k):  #include using namespace std;  typedef struct node{  int row;  int col;  int data; }Node, *PNode;  void swap(PNode &a, PNode &b) {  PNode temp = a;  a = b;  b = temp; } void adjust_min_heap(PNode *bin, int i, int k) {  int left  = 2 * i + 1;  int right = 2 * i + 2;  int min_index;  if(left < k && bin[left]->data < bin[i]->data) {   min_index = left;  } else {   min_index = i;  }  if(right < k && bin[right]->data < bin[min_index]->data) {   min_index = right;  }  if(min_index != i) {   swap(bin[i], bin[min_index]);   adjust_min_heap(bin, min_index, k);  } }  void build_min_heap(PNode *bin, int k) {  for(int i = k \/ 2; i >= 0; i--) {   adjust_min_heap(bin, i, k);  } }  int *get_k_th_minimum(int *a, int *b, int k) {  PNode *bin = (PNode*)malloc(sizeof(PNode) * k);  int *result = (int*)malloc(sizeof(int) * k);  memset(result, 0, sizeof(int) * k);  int i;  int count = 0;  for(i = 0; i < k; i++) {   bin[i] = (Node*)malloc(sizeof(Node));   bin[i]->row = i;   bin[i]->col = 0;   bin[i]->data = a[i] + b[0];  }  build_min_heap(bin, k);  while(count < k) {   result[count++] = bin[0]->data;   bin[0]->col += 1;   bin[0]->data = a[bin[0]->row] + b[bin[0]->col];   adjust_min_heap(bin, 0, k);  }  for(i = 0; i < k; i++) {   free(bin[i]);  }  free(bin);  return result; }  void main() {  int a[] = {1, 2, 4};  int b[] = {5, 9, 11};  int k = 3;  int *p = get_k_th_minimum(a, b, k);  for(int i = 0; i < k; i++) {   cout << p[i] << \" \";  }  free(p);  getchar(); }",
+                     "answerCount":75,
+                     "location":"http:\/\/www.careercup.com\/question?id=15192666",
+                     "name":"Question #11",
+                     "votes":0
+                  },
+                  {
+                     "title":"Given s string, Find max size of a sub-string, in which no duplicate chars present.",
+                     "answerCount":72,
+                     "location":"http:\/\/www.careercup.com\/question?id=5684278553739264",
+                     "name":"Question #12",
+                     "votes":5
+                  },
+                  {
+                     "title":"Here is a tree. It's a binary tree but in no particular order.  How do you write this tree to a file so that it can be reread in an reconstructed exactly as shown?",
+                     "answerCount":70,
+                     "location":"http:\/\/www.careercup.com\/question?id=1606",
+                     "name":"Question #13",
+                     "votes":0
+                  },
+                  {
+                     "title":"You are given a huge log file which holds the entry and exit time of each person entering and exiting the office on a given day  format of file: entry time                      exit time 09:12:23                        11:14:35 10:34:01                         13:23:40 10:34:31                          11:20:10 . .upto N entries for a given day  Design a function which returns the total number of persons in the office at any given time.  e.g input to function is 11:05:20.  The interviewer said he could call the function every second with input 11:05:20, 11:05:21,11:05:22, 11:05:23..........14:30:30  I really did not understand how to optimize the function.",
+                     "answerCount":70,
+                     "location":"http:\/\/www.careercup.com\/question?id=13817668",
+                     "name":"Question #14",
+                     "votes":0
+                  },
+                  {
+                     "title":"You have a random 5 function. Generate a random 7 function using this random 5 function with equal probability hint: think at bit level",
+                     "answerCount":69,
+                     "location":"http:\/\/www.careercup.com\/question?id=2490",
+                     "name":"Question #15",
+                     "votes":0
+                  },
+                  {
+                     "title":"Given a dictionary of strings [ strings are in sorted order] you have to find the precedence of characters according to the dictionary.. eat bxy e is ranked above b according to the dictionary.",
+                     "answerCount":63,
+                     "location":"http:\/\/www.careercup.com\/question?id=13394663",
+                     "name":"Question #16",
+                     "votes":1
+                  },
+                  {
+                     "title":"Write a program which returns true if the given string contains the consecutive repeated substring .Ex-adabcabcd here abc is consecutive repeated substring.",
+                     "answerCount":63,
+                     "location":"http:\/\/www.careercup.com\/question?id=14466116",
+                     "name":"Question #17",
+                     "votes":0
+                  },
+                  {
+                     "title":"Consider an array of integers wherein each element is +1 or -1 its preceding element. Given a number, find the first occurence of this number (index) in this array without using linear search.  For example, consider the array : 4 5 6 5 6 7 8 9 10 9 10 (each element in this array is +1 or -1 its preceding element)  Input : 10 (find first occurence of 10 without using linear search) Output : 8",
+                     "answerCount":60,
+                     "location":"http:\/\/www.careercup.com\/question?id=18813688",
+                     "name":"Question #18",
+                     "votes":2
+                  },
+                  {
+                     "title":"Given an array of integers, find all combination of four elements in the array whose sum is equal to a given value X. For example, if the given array is {10, 2, 3, 4, 5, 9, 7, 8} and X = 23, then your function should print ??��3 5 7 8?? (3 + 5 + 7 + 8 = 23).",
+                     "answerCount":58,
+                     "location":"http:\/\/www.careercup.com\/question?id=14578788",
+                     "name":"Question #19",
+                     "votes":0
+                  },
+                  {
+                     "title":"Write a method that multiplies two integers without using multiply operator",
+                     "answerCount":57,
+                     "location":"http:\/\/www.careercup.com\/question?id=15487859",
+                     "name":"Question #20",
+                     "votes":2
+                  },
+                  {
+                     "title":"Find the longest subarray which consists of numbers that can be arranged in a continuous sequence. For ex- {4,5,1,5,7,6,8,4,1} output-{5,7,6,8,4}.Find the longest.",
+                     "answerCount":56,
+                     "location":"http:\/\/www.careercup.com\/question?id=14491723",
+                     "name":"Question #21",
+                     "votes":0
+                  },
+                  {
+                     "title":"Given an array of N integers  with +ve & -ve numbers. Find the maxproduct of 3 numbers ? & Test Cases",
+                     "answerCount":56,
+                     "location":"http:\/\/www.careercup.com\/question?id=12810663",
+                     "name":"Question #22",
+                     "votes":0
+                  },
+                  {
+                     "title":"Search for an element in a matrix. Rows and columns of the matrix are sorted in ascending order.  \n \n \neg. matrix  \n[1   14    25   35] \n[2    16    28   38] \n[5     20    28   40] \n[16   22     38   41]    \n \nsearch for 38.  \n \nThe interviewer was looking for a solution better than O(n+m). He didn't want a solution which starts searching from the left bottom and go to right or above according to the key value to search. That solution has O(n+m) worst complexity, where n is row count and m is column count.",
+                     "answerCount":56,
+                     "location":"http:\/\/www.careercup.com\/question?id=23194664",
+                     "name":"Question #23",
+                     "votes":1
+                  },
+                  {
+                     "title":"An operation \"swap\" means removing an element from the array and appending it at the back of the same array. Find the minimum number of \"swaps\" needed to sort that array.  Eg :- 3124 Output: 2 (3124->1243->1234)  How to do it less than O(n^2) ?",
+                     "answerCount":55,
+                     "location":"http:\/\/www.careercup.com\/question?id=14954671",
+                     "name":"Question #24",
+                     "votes":0
+                  },
+                  {
+                     "title":"Coding: How would you find the nth to last element in a linked list?",
+                     "answerCount":54,
+                     "location":"http:\/\/www.careercup.com\/question?id=1814",
+                     "name":"Question #25",
+                     "votes":0
+                  },
+                  {
+                     "title":"Given a String - aaaabbbbcc, convert the given string in to a4b4c2 without using extra memory. ( Note that every character appears more than once in input string and the repeated characters are contiguous)",
+                     "answerCount":54,
+                     "location":"http:\/\/www.careercup.com\/question?id=12663669",
+                     "name":"Question #26",
+                     "votes":0
+                  },
+                  {
+                     "title":"Given a list of 'N' coins, their values being in an array A[], return the minimum number of coins required to sum to 'S'",
+                     "answerCount":54,
+                     "location":"http:\/\/www.careercup.com\/question?id=14469085",
+                     "name":"Question #27",
+                     "votes":0
+                  },
+                  {
+                     "title":"Given a number,find the next higher number using the same digits in the number. Eg- 15432, Soln- 21345.",
+                     "answerCount":54,
+                     "location":"http:\/\/www.careercup.com\/question?id=11543949",
+                     "name":"Question #28",
+                     "votes":0
+                  },
+                  {
+                     "title":"N*N matrix. contains only 0's and 1's. every row is sorted in descending order. find row containing maximum no of 1's. Efficient soln reqd.",
+                     "answerCount":53,
+                     "location":"http:\/\/www.careercup.com\/question?id=14466994",
+                     "name":"Question #29",
+                     "votes":0
+                  },
+                  {
+                     "title":"Given an integer array {1, -20, 29, 9, 1, 100, ..., 29), please return the index of the first non-repetitive element in the array.  Manager mentioned that HashTable was allowed.",
+                     "answerCount":52,
+                     "location":"http:\/\/www.careercup.com\/question?id=75825",
+                     "name":"Question #30",
+                     "votes":0
+                  }
+               ],
+               "size":30
+            },
+            {
+               "name":"Array & String",
+               "children":[
+                  {
+                     "title":"If [a1,a2,a3...,an,b1,b2...bn] is given input change this to [a1,b1,a2,b2.....an,bn] , solution should be in-place",
+                     "answerCount":158,
+                     "location":"http:\/\/www.careercup.com\/question?id=7528760",
+                     "name":"Question #1",
+                     "votes":0
+                  },
+                  {
+                     "title":"find the longest palindrome in a string?",
+                     "answerCount":143,
+                     "location":"http:\/\/www.careercup.com\/question?id=245679",
+                     "name":"Question #2",
+                     "votes":0
+                  },
+                  {
+                     "title":"one unsorted array is given.Find out the index i and j ,j> i for which a[j]  - a[i]  is maximum.perform in linear time complexity",
+                     "answerCount":118,
+                     "location":"http:\/\/www.careercup.com\/question?id=12705676",
+                     "name":"Question #3",
+                     "votes":2
+                  },
+                  {
+                     "title":"An array contains two sub- sorted arrays. Give an inplace algorithm to sort two sub arrays.  for ex:  I\/P:   1 4 5 7 8 9 2 3 6 10 11 O\/P:  1 2 3 4 5 6 7 8 9 10 11",
+                     "answerCount":66,
+                     "location":"http:\/\/www.careercup.com\/question?id=16047668",
+                     "name":"Question #4",
+                     "votes":1
+                  },
+                  {
+                     "title":"Given a array of size n. Divide the array in to two arrays of size n\/2,n\/2. such that average of two arrays is equal.",
+                     "answerCount":61,
+                     "location":"http:\/\/www.careercup.com\/question?id=6748824919867392",
+                     "name":"Question #5",
+                     "votes":4
+                  },
+                  {
+                     "title":"Consider an array of integers wherein each element is +1 or -1 its preceding element. Given a number, find the first occurence of this number (index) in this array without using linear search.  For example, consider the array : 4 5 6 5 6 7 8 9 10 9 10 (each element in this array is +1 or -1 its preceding element)  Input : 10 (find first occurence of 10 without using linear search) Output : 8",
+                     "answerCount":60,
+                     "location":"http:\/\/www.careercup.com\/question?id=18813688",
+                     "name":"Question #6",
+                     "votes":2
+                  },
+                  {
+                     "title":"You are given an array of n integers which can contain integers from 1 to n only . Some elements can be repeated multiple times and some other elements can be absent from the array . Write a running code on paper which takes O(1) space apart from the input array and O(n) time to print which elements are not present in the array and the count of every element which is there in the array along with the element number .  NOTE: The array isn't necessarily  sorted.",
+                     "answerCount":59,
+                     "location":"http:\/\/www.careercup.com\/question?id=21263687",
+                     "name":"Question #7",
+                     "votes":10
+                  },
+                  {
+                     "title":"If an array is having integers\/Char\/special Char... Ex: \"PST456DA85M2A!!23++46\", find out the sum of integers. ****Note: If we find consecutive digits in array we need to treat it as number, let say 456, we need to treat it as [ four hundread and fifty six]. Write a program to get the output by summing 456+85+2+23+46..also this needs to be done in lessnumber of iterations..",
+                     "answerCount":58,
+                     "location":"http:\/\/www.careercup.com\/question?id=14569703",
+                     "name":"Question #8",
+                     "votes":0
+                  },
+                  {
+                     "title":"Given an array elements, Find the maximum number which can be formed by the array elements Eg input ??C a[ ] = {9,6,8,1] Output -    9861",
+                     "answerCount":48,
+                     "location":"http:\/\/www.careercup.com\/question?id=15444944",
+                     "name":"Question #9",
+                     "votes":0
+                  },
+                  {
+                     "title":"Given you an array of 100 Elements with one number missing, how will you find the missing number?  Array 1 to 100 with 55 missing.",
+                     "answerCount":48,
+                     "location":"http:\/\/www.careercup.com\/question?id=23092662",
+                     "name":"Question #10",
+                     "votes":0
+                  },
+                  {
+                     "title":"Q2. F2F Round-1, Amazon(Bangalore)  Given an array of integers having the property that first that array is strictly increasing then it is strictly decreasing, You have to search for a given number.  Constraint: Minimize the complexity",
+                     "answerCount":47,
+                     "location":"http:\/\/www.careercup.com\/question?id=13579663",
+                     "name":"Question #11",
+                     "votes":0
+                  },
+                  {
+                     "title":"Given two arrays, A and B, both containing integers, find values that appear in both arrays and output them.   I knew the fastest answer to this, which is basically adding array A to a hashmap and then checking if that map contains each element of B, which is an O(n) operation, but uses memory in O(n) as well. The interviewer then asked if I could figure a way of doing this with a complexity of O(n) without using any extra memory, basically just O(1) for memory.   Is this possible? I could not think of a simple quick solution for this on the fly, but I imagine it is possible.  Here is the code I wrote during the interview.",
+                     "answerCount":43,
+                     "location":"http:\/\/www.careercup.com\/question?id=14959975",
+                     "name":"Question #12",
+                     "votes":0
+                  },
+                  {
+                     "title":"Write a program to remove duplicate elements from array.(Array contains elements in range 1...N). Algorithm must be O(N) in time and O(1) in space. Come up with as many test cases as you can.",
+                     "answerCount":43,
+                     "location":"http:\/\/www.careercup.com\/question?id=4794712",
+                     "name":"Question #13",
+                     "votes":0
+                  },
+                  {
+                     "title":"An array of size N is given. Array is sub divided into sub array of size K. Find maximum value of each sub array.  My ans- While traversing the array keep on adding values to max heap of size K and keeping a virtual window of size K on array. When element leaves the window then remove the leaving element from heap too and reheapify the heap. And max element of that window will be again on top in heap.  Any better approach?",
+                     "answerCount":42,
+                     "location":"http:\/\/www.careercup.com\/question?id=15261663",
+                     "name":"Question #14",
+                     "votes":0
+                  },
+                  {
+                     "title":"Given an array of numbers, arrange it such that all the numbers less than a given key should come before the key and all the numbers greater than the key should come after it. For example: arr = { 0, -1, -2, 2, 0, 3, 5}, given key = 0  answer should be {-1, -2, 0, 0, 2, 3, 5} Order of elements that are smaller or greater than key does not matter i.e. sorting is not expected. So, {-1,-2, 0, 0, 5, 2, 3} is also a correct answer.  Time complexity should not be more than O(n).",
+                     "answerCount":41,
+                     "location":"http:\/\/www.careercup.com\/question?id=21037663",
+                     "name":"Question #15",
+                     "votes":1
+                  },
+                  {
+                     "title":"Write a program  Given an array of N integers . Find the maxproduct of 3 numbers ?",
+                     "answerCount":40,
+                     "location":"http:\/\/www.careercup.com\/question?id=14106781",
+                     "name":"Question #16",
+                     "votes":0
+                  },
+                  {
+                     "title":"You have an array of binary numbers as \"00001101000001010100000...\"... We need to find the First occurrence of 1 in this series.. using binary search.   we need to design an algorithm  of complexity less than O(n).. and we need to use binary search strictly..",
+                     "answerCount":40,
+                     "location":"http:\/\/www.careercup.com\/question?id=18536687",
+                     "name":"Question #17",
+                     "votes":-3
+                  },
+                  {
+                     "title":"Given an array of integers. Print a pair whose sum is closest to zero?    Eg: Input: arr = {2 5 8 -7 2,9} Output:  => 8, -7",
+                     "answerCount":39,
+                     "location":"http:\/\/www.careercup.com\/question?id=14594731",
+                     "name":"Question #18",
+                     "votes":0
+                  },
+                  {
+                     "title":"Q1. F2F Round 1 Amazon(Bangalore)  Given a character array as input. Array contains only three types of characters 'R', 'G' and 'B'. Sort the array such that all 'R's comes before 'G's and all 'G's comes before 'B's.  Constraint :- No extra space allowed(except O(1) space like variables) and minimize the time complexity. You can only traverse the array once.",
+                     "answerCount":39,
+                     "location":"http:\/\/www.careercup.com\/question?id=13580661",
+                     "name":"Question #19",
+                     "votes":0
+                  },
+                  {
+                     "title":"Given a number in an array form, Come up with an algorithm to push all the zeros to the end. Expectation : O(n) solution",
+                     "answerCount":37,
+                     "location":"http:\/\/www.careercup.com\/question?id=4846025567109120",
+                     "name":"Question #20",
+                     "votes":0
+                  },
+                  {
+                     "title":"Given an input array  a={1,2,3,6,2,8----}  product of all numbers=p=a[0]*a[1]*---a[n-1] where n is size of array output arrau should be b={p\/a[0],p\/a[1],p\/a[2]-----}. you should not use division operator.Time complexity should be less than o(n2).",
+                     "answerCount":37,
+                     "location":"http:\/\/www.careercup.com\/question?id=5436643691462656",
+                     "name":"Question #21",
+                     "votes":6
+                  },
+                  {
+                     "title":"You are given an array with numbers - [11, 3, 11, 11, 3, 2, 0, -2, 2]  You are supposed to write a function that returns the number that appears \"odd\" number of times.   The solution is obviously using HashMap. But that takes O(n) to create the HashMap and O(n) to lookup. How can one eliminate the second O(n) yet keeping the HashMap?  Hint: Do you really need to count frequency of occurrence of each digit?",
+                     "answerCount":37,
+                     "location":"http:\/\/www.careercup.com\/question?id=5698049099694080",
+                     "name":"Question #22",
+                     "votes":2
+                  },
+                  {
+                     "title":"Given a big unsorted list of 64-bit integers, find an element not in list",
+                     "answerCount":36,
+                     "location":"http:\/\/www.careercup.com\/question?id=10602664",
+                     "name":"Question #23",
+                     "votes":0
+                  },
+                  {
+                     "title":"There is very long array of ints, and you are given pointer to base addr of this array.. each int is 16bit representation... you need to return the pointer to tht \"bit\" inside array where longest sequence of \"1\"s start",
+                     "answerCount":36,
+                     "location":"http:\/\/www.careercup.com\/question?id=3179669",
+                     "name":"Question #24",
+                     "votes":0
+                  },
+                  {
+                     "title":"You have an array of size n with values ranging from 1 to n. Exactly one number is missed and one number is repeated. Find missing number and Repeated number.",
+                     "answerCount":35,
+                     "location":"http:\/\/www.careercup.com\/question?id=14878847",
+                     "name":"Question #25",
+                     "votes":0
+                  },
+                  {
+                     "title":"Find the nth most frequent number in array",
+                     "answerCount":34,
+                     "location":"http:\/\/www.careercup.com\/question?id=13870747",
+                     "name":"Question #26",
+                     "votes":0
+                  },
+                  {
+                     "title":"Given an int array and an int value. Find all pairs in array that add up to value.",
+                     "answerCount":34,
+                     "location":"http:\/\/www.careercup.com\/question?id=163739",
+                     "name":"Question #27",
+                     "votes":0
+                  },
+                  {
+                     "title":"We have n number of sorted array for fixed length. Now we have to merge  these and need to save finaly result array into given array. Note- we can't use extra space except the given array.",
+                     "answerCount":34,
+                     "location":"http:\/\/www.careercup.com\/question?id=14944921",
+                     "name":"Question #28",
+                     "votes":0
+                  },
+                  {
+                     "title":"You are given an array of length 99 that contains all the numbers between 1 and 100, except for one number that has been removed.  Find the missing element.",
+                     "answerCount":34,
+                     "location":"http:\/\/www.careercup.com\/question?id=1519",
+                     "name":"Question #29",
+                     "votes":0
+                  },
+                  {
+                     "title":"In an array of unsorted integers (you may assume the array may contain +ve, -ve and 0s), write a function  int returnNthMax(int[] arr, int n)  which will return the nth Max number. For e.g. if this is given array {2, -4, 5, 6, 0, 7, -1, 10, 9} and n=1, it should return the max number, 10 and if n=3, it should return 3rd max number, which is: 7.",
+                     "answerCount":33,
+                     "location":"http:\/\/www.careercup.com\/question?id=20967663",
+                     "name":"Question #30",
+                     "votes":1
+                  }
+               ],
+               "size":30
+            }
+         ]
+      }
+   ]
+}

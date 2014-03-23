@@ -104,7 +104,7 @@ public class Experiment {
 		JSONObject questionNode = new JSONObject();
 		questionNode.put("name", String.format("Question #%d", count));
 		questionNode.put("votes", question.getVote());
-		questionNode.put("answerCount", question.getAnswer());
+		questionNode.put("size", question.getAnswer());
 		questionNode.put("location", question.getUrl());
 		questionNode.put("title", question.getTitle());
 		questionList.add(questionNode);

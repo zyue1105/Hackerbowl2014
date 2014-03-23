@@ -44,7 +44,7 @@ public class QuestionBuilder {
 	public Integer getQuestionVote(JSONObject questionEntry) {
 		JSONObject question = getQuestion(questionEntry);
 		String retString = (String) question.get(VoteCount);
-		Integer ret = Integer.getInteger(retString);
+		Integer ret = Integer.parseInt(retString);
 		return ret;
 	}
 	
@@ -56,7 +56,7 @@ public class QuestionBuilder {
 	public Integer getQuestionAnswerCount(JSONObject questionEntry) {
 		JSONObject question = getQuestion(questionEntry);
 		String retString = (String) question.get(AnswersCount);
-		Integer ret = Integer.getInteger(retString);
+		Integer ret = Integer.parseInt(retString);
 		return ret;
 	}
 	

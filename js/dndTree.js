@@ -485,7 +485,7 @@ treeJSON = d3.json("interviewQuestions.json", function(error, treeData) {
 
         // Change the circle fill depending on whether it has children and is collapsed
         node.select("circle.nodeCircle")
-            .attr("r", 4.5)
+            .attr("r", 6)
             .style("fill", function(d) {
                 return d._children ? "#01B6AD" : "#fff";
             });

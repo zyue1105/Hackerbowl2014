@@ -1,108 +1,21 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.css" />-->
-<style type="text/css">
-  
-	.node {
-    cursor: pointer;
-  }
 
-  .overlay{
-      background-color:#FFFFFF;
-  }
-   
-  .node circle {
-    fill: #fff;
-    stroke: #0A4958;
-    stroke-width: 3px;
-  }
-   
-  .node text {
-    font-size:15px;
-    font-family:sans-serif;
-  }
-   
-  .link {
-    fill: none;
-    stroke: #ccc;
-    stroke-width: 1.5px;
-  }
-
-  .templink {
-    fill: none;
-    stroke: red;
-    stroke-width: 3px;
-  }
-
-  .ghostCircle.show{
-      display:block;
-  }
-
-  .ghostCircle, .activeDrag .ghostCircle{
-       display: none;
-  }
-
-    body {
-        background-color: #FFFFFF;
-        /*margin:0px 0px 0px 0px;*/
-    }
-
-</style>
-<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.css" />-->
-<style>
-    .tipsy { font-family:"Arial"; font-size: 15px; position: absolute; padding: 5px; z-index: 100000; }
-    .tipsy-inner { background-color: #0A4958; color: #ffffff; max-width: 300px; padding: 0; text-align: left; padding:10px;}
-    .tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #000; }
-    .tipsy-arrow-n { border-bottom-color: #000; }
-    .tipsy-arrow-s { border-top-color: #000; }
-    .tipsy-arrow-e { border-left-color: #FFF; }
-    .tipsy-arrow-w { border-right-color: #000; }
-    .tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
-    .tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
-    .tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
-    .tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
-    .tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
-    .tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
-    .tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
-    .tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
-    .gravity { width: 100%; margin: 5px 0; border-spacing: 5px; }
-    .gravity td { text-align: center; vertical-align: middle; padding: 5px 0; background-color: #d0d0d0; width: 33%; }
-    .gravity a { }
-    .gravity a:hover { color: #505050; background: none; }
-</style>
 <link rel="stylesheet" href="themes/hackerblow_green_light.css" />
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/tipsy.css" />
+
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="js/dndTree.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.css" />-->
-
+<style>.textLayer { display: none; }</style>
 
 <script type="text/javascript" src="js/jquery.tipsy.js"></script>
 <!--<link rel="stylesheet" href="tipsySVG/tipsy.css" type="text/css"/>-->
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        console.log("in ready");
-        console.log($('svg title'));
-        $('svg title').parent().tipsy({
-            gravity: 'w',
-            hoverlock:true,
-            html: true,
-            fade: true
-            //    title: function() { return $(this).find('title').text(); }
-        });
-
-//        var zoom = d3.select("#graphic")
-//                .call(d3.behavior.zoom().scaleExtent([.5, 3]).on("zoom",redraw));
-//        function redraw() {
-//            d3.select("#zoomy")
-//                    .attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")");
-//        }
-    });
-</script>
 
 <body>
 <!--<div id="topdiv">Classified Interview Questions</div>-->
@@ -110,13 +23,23 @@
 
     <header data-role ="header" data-position="fixed">
         <h1 class="ui-title" role="heading">Classified Interview Questions</h1>
-        <a href="index.html" data-role="button" data-icon="home" class="ui-btn-left">Home</a>
+        <div class="ui-btn-left" data-role="controlgroup" data-type="horizontal">
+          <a href="index.html" data-role="button" data-icon="home">Home</a>
+          <a href="recommendation.html" data-role="button" data-icon="grid">Recommendation</a>
+        </div>
+        <!--a href="index.html" data-role="button" data-icon="home" class="ui-btn-left">Home</a-->
         <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal">
             <a href="#" data-role="button" data-icon="grid">Select</a>
             <a href="#" data-role="button" data-icon="gear">Options</a>
         </div>
     </header>
 
+    <!--script>
+    $(document).on('click', 'a[data-role*="button"]', function () {            
+        location.reload();
+    });
+    </script-->
+    
     <!--<div data-role="controlgroup" data-type="horizontal">-->
         <!--<a href="index.html" data-role="button">Yes</a>-->
         <!--<a href="index.html" data-role="button">No</a>-->
@@ -139,12 +62,18 @@
     </div><!-- /content -->
 
     <div data-role="footer" data-position="fixed">
-        <h4>Page Footer</h4>
+        <h4>Hackerbowl 2014</h4>
     </div><!-- /footer -->
+    
 </div><!-- /page -->
 <!--<div id="tree-container"></div>-->
 <!--<div id="bottomdiv"><center>-->
         <!--All Rights Reserved.-->
 <!--</center></div>-->
+
+<script type="text/javascript" src="js/loadPage.js"></script>	
+<script type="text/javascript" id="pdf-js" src="js/pdf.js"></script>
+<script type="text/javascript" src="js/loadPDF.js"></script>	
+
 </body>
 </html>

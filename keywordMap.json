@@ -1,4 +1,4 @@
-
+{"mapping": [
 {
 	"name": "c++",
 	"map": ["c++"]
@@ -103,3 +103,39 @@
 	"name": "operating system",
 	"map": ["system design"]
 },
+{
+	"name": "image",
+	"map": ["mathematical and computing"]
+},
+{
+	"name": "real-time",
+	"map": ["system design", "bit manipulation"]
+},
+{
+	"name": "parallel",
+	"map": ["mathematical and computing", "system design", "bit manipulation"]
+},
+{
+	"name": "database",
+	"map": ["database"]
+},
+{
+	"name": "speech recognition",
+	"map": ["mathematical and computing"]
+},
+{
+	"name": "signal",
+	"map": ["mathematical and computing", "networking"]
+},
+{
+	"name": "web",
+	"map": ["networking"]
+},
+{
+	"name": "graphics",
+	"map": ["mathematical and computing"]
+},
+{
+	"name": "interface",
+	"map": ["networking", "system design"]
+	}]}

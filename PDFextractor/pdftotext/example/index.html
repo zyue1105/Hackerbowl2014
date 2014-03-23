@@ -3,7 +3,7 @@
   <!--script type="text/javascript" src="https://rawgithub.com/mozilla/pdf.js/gh-pages/build/pdf.js"></script-->
   
   <title>Converting PDF To Text using pdf.js</title>
-  <!--style>.textLayer { display: none; }</style-->
+  <style>.textLayer { display: none; }</style>
 </head>
 
 <body>
@@ -12,13 +12,17 @@
   
   <span id="preview"></span>
   <input type="file" onchange="displayPreview(this.files);" />
-  <canvas id="the-canvas" style="border:3px solid black"></canvas>    
+  <!--canvas id="the-canvas" style="border:3px solid black"></canvas-->    
   
   <script id="pdf-js" src="pdf.js"></script>
+  <!--script id="pdf_original-js" src="pdf_original.js"></script-->
+  <!--script id="pdf_mozilla-js" src="pdf_mozilla.js"></script-->
   <script>PDFJS.workerSrc = document.getElementById("pdf-js").getAttribute("src");</script>
   
   <script>         
-    
+  
+  var pdf2text;
+  
   function convertDataURIToBinary(dataURI) {
     var BASE64_MARKER = ';base64,';
   
@@ -75,12 +79,38 @@
             for (var j = 0; j < nodes.length; j++){
               layers.push(nodes[j].textContent + "\n");
             }
-            console.log(layers.join("\n"));
+            pdf2text = layers.join("\n");
                           
           }, 1000);
         }
       }, textLayer);
     }
+    
+    //PDFJS.workerSrc = "pdf_mozilla.js";
+        
+    /*PDFJS.getDocument(pdfAsArray).then(function getPdfHelloWorld(pdf) {
+      //
+      // Fetch the first page
+      //
+      pdf.getPage(1).then(function getPageHelloWorld(page) {
+        var scale = 1.5;
+        var viewport = page.getViewport(scale);
+
+        //
+        // Prepare canvas using PDF page dimensions
+        //
+        var canvas = document.getElementById('the-canvas');
+        var context = canvas.getContext('2d');
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        //
+        // Render PDF page into canvas context
+        //
+        page.render({canvasContext: context, viewport: viewport});        
+      });          
+      
+    });*/
     
   }
   

@@ -32,7 +32,7 @@ public class Experiment {
 	}
 
 	private static void outputToFile() throws IOException {
-		BufferedWriter writer = new BufferedWriter(new FileWriter(path+"Experiment.json"));
+		BufferedWriter writer = new BufferedWriter(new FileWriter(path+"Experiment1.json"));
 		m_output.writeJSONString(writer);
 		writer.close();
 	}

@@ -10,7 +10,7 @@ import Feature.FeatureList;
 
 public class Classify {
 	private Map<FeatureList, String> template = null;
-	private final static Double Threshold = 0.9;
+	private final static Double Threshold = 0.95;
 	public Classify() {
 		try {
 			template = new Train().train();

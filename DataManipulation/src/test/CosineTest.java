@@ -60,7 +60,7 @@ public class CosineTest {
 	
 	
 	public static void main(String[] args) throws IOException, ParseException {
-		String fileName = "C:\\Users\\Yin\\Documents\\GitHub\\Hackerbowl2014\\DataSample\\amazon_system_design_1.json";
+		String fileName = "C:\\Users\\Yin\\Documents\\GitHub\\Hackerbowl2014\\DataSample\\amazon_network_1.json";
 		JSONArray questionArray = generateJSONArray(fileName);
 		String questiontext = "";
 		String qatext = "";
@@ -77,7 +77,7 @@ public class CosineTest {
 		
 		
 		
-		Set<Question> questions = new QuestionBuilder().build("C:\\Users\\Yin\\Documents\\GitHub\\Hackerbowl2014\\DataSample\\amazon_arrays_1.json");
+		Set<Question> questions = new QuestionBuilder().build("C:\\Users\\Yin\\Documents\\GitHub\\Hackerbowl2014\\DataSample\\amazon_network_1.json");
 		//questions.get(0).OutputFeatureNames();
 		for (Question question : questions) {
 			//question.OutputFeatures();

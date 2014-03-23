@@ -5,13 +5,16 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import Feature.FeatureList;
 import Question.Question;
 import Question.QuestionBuilder;
 
@@ -54,6 +57,20 @@ public class Train {
 			commentsString += " " + (String)((JSONObject) comment).get(QuestionDescription);
 		}
 		return commentsString;
+	}
+	
+	public FeatureList getFeatureList(String fileName) throws IOException, ParseException {
+		JSONArray questionArray = generateJSONArray(path+fileName);
+		String questiontext = "";
+		String qatext = "";
+		for (Object entry : questionArray) {
+			JSONObject questionEntry = (JSONObject) entry;
+			questiontext += " " + getQuestionDescription(questionEntry);
+			qatext += " " + getQuestionDescription(questionEntry);
+			qatext += " " + getQuestionCommentsDescription(questionEntry);
+		}
+		Question training = new Question(questiontext, qatext);
+		return training.getFeature();
 	}
 	
 	public static List<Double> getVector(String fileName) throws IOException, ParseException {
@@ -139,5 +156,52 @@ public class Train {
 		write(writer, "Tree & Graph", SD);
 		
 		writer.close();
+	}
+	
+	public Map<FeatureList, String> train() throws IOException, ParseException {
+		Map<FeatureList, String> map = new HashMap<FeatureList, String>();
+		String fileName = "amazon_algorithm_1.json";
+		map.put(getFeatureList(fileName), "Algorithm");
+		
+		fileName = "amazon_arrays_1.json";
+		map.put(getFeatureList(fileName), "Array & String");
+		
+		fileName = "amazon_bitmanipulation_1.json";
+		map.put(getFeatureList(fileName), "Bit Manipulation");
+		
+		fileName = "amazon_brain_teaser_1.json";
+		map.put(getFeatureList(fileName), "Brain Teaser");
+		
+		fileName = "amazon_Cplusplus_1.json";
+		map.put(getFeatureList(fileName), "C++");
+		
+		fileName = "amazon_database_1.json";
+		map.put(getFeatureList(fileName), "DataBase");
+		
+		fileName = "amazon_java_1.json";
+		map.put(getFeatureList(fileName), "Java");
+		
+		fileName = "amazon_linkedlist_1.json";
+		map.put(getFeatureList(fileName), "Linked List");
+		
+		fileName = "amazon_math_1.json";
+		map.put(getFeatureList(fileName), "Mathematical and Computing");
+		
+		fileName = "amazon_network_1.json";
+		map.put(getFeatureList(fileName), "Networking");
+		
+		fileName = "amazon_ood_1.json";
+		map.put(getFeatureList(fileName), "Object Oriented Design");
+		
+		fileName = "amazon_system_design_1.json";
+		map.put(getFeatureList(fileName), "System Design");
+		
+		fileName = "amazon_testing_1.json";
+		map.put(getFeatureList(fileName), "Testing");
+		
+		fileName = "amazon_tree_graph_1.json";
+		map.put(getFeatureList(fileName), "Tree & Graph");
+		return map;
+		
 	}
 }

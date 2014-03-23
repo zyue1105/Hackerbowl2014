@@ -1,5 +1,5 @@
 // Get JSON data
-treeJSON = d3.json("DataSample/testQ.json", function(error, treeData) {
+treeJSON = d3.json("DataReal/Experiment.json", function(error, treeData) {
 
     // Calculate total nodes, max label length
     var totalNodes = 0;
@@ -58,8 +58,8 @@ treeJSON = d3.json("DataSample/testQ.json", function(error, treeData) {
 
     function sortTree() {
         tree.sort(function(a, b) {
-            return b.name.toLowerCase() < a.name.toLowerCase() ? 1 : -1;
-			// return b.size < a.size ? 1 : -1;
+//            return b.name.toLowerCase() < a.name.toLowerCase() ? 1 : -1;
+			return b.size < a.size ? -1 : 1;
         });
     }
     // Sort the tree initially incase the JSON isn't in a sorted order.

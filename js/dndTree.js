@@ -339,10 +339,10 @@ treeJSON = d3.json("DataReal/Experiment.json", function(error, treeData) {
 
     }
 
-    function strConc(title, votes, answersCount, url) {
+    function strConc(title, votes, size, url) {
 //        console.log(vote);
 //        console.log(url);
-        str = "<p>" + title + "</p>" + votes + " Votes " + answersCount + " Answers " + "<a href=" + url + " target='_blank' style='color: #01B6AD'>Read More</a>";
+        str = "<p>" + title + "</p>" + votes + " Votes " + size + " Answers " + "<a href=" + url + " target='_blank' style='color: #01B6AD'>Read More</a>";
         return str;
     }
 
@@ -425,7 +425,7 @@ treeJSON = d3.json("DataReal/Experiment.json", function(error, treeData) {
             .text(function(d) {
                 if (d.location) {
 //                    return "<a href='http://www.careercup.com' target='_blank' >Read More</a>";
-                    return strConc(d.title, d.votes, d.answerCount, d.location);
+                    return strConc(d.title, d.votes, d.size, d.location);
                 }
                 else {
                     return "";

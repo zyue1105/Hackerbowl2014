@@ -15,6 +15,7 @@ public class Question implements Comparable<Question> {
 	private Integer voteCount = 0;
 	private Integer Answers = 0;
 	private TotalFeature arrayFeature = new TotalFeature();
+	private String location = "";
 
 	public Question(String question, String answers) {
 		title = question;
@@ -36,6 +37,10 @@ public class Question implements Comparable<Question> {
 		voteCount = votes;
 	}
 	
+	public void setUrl(String url) {
+		location = url;
+	}
+	
 	public void setAnswer(Integer answer) {
 		Answers = answer;
 	}
@@ -50,6 +55,10 @@ public class Question implements Comparable<Question> {
 	
 	public String getTitle() {
 		return title;
+	}
+	
+	public String getUrl() {
+		return location;
 	}
 	
 	public FeatureList getFeature() {

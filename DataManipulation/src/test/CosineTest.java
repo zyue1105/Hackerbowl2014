@@ -6,6 +6,7 @@ import java.io.Reader;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeSet;
 
 import org.json.simple.JSONArray;
@@ -59,7 +60,7 @@ public class CosineTest {
 	
 	
 	public static void main(String[] args) throws IOException, ParseException {
-		String fileName = "C:\\Users\\Yin\\Documents\\GitHub\\Hackerbowl2014\\DataSample\\amazon_tree_graph_1.json";
+		String fileName = "C:\\Users\\Yin\\Documents\\GitHub\\Hackerbowl2014\\DataSample\\amazon_system_design_1.json";
 		JSONArray questionArray = generateJSONArray(fileName);
 		String questiontext = "";
 		String qatext = "";
@@ -70,10 +71,34 @@ public class CosineTest {
 			qatext += " " + getQuestionCommentsDescription(questionEntry);
 		}
 		Question training = new Question(questiontext, qatext);
-		List<Question> questions = new QuestionBuilder().build("C:\\Users\\Yin\\Documents\\GitHub\\Hackerbowl2014\\DataSample\\amazon_arrays_1.json");
-		questions.get(0).OutputFeatureNames();
+		
+		
+		
+		
+		
+		
+		Set<Question> questions = new QuestionBuilder().build("C:\\Users\\Yin\\Documents\\GitHub\\Hackerbowl2014\\DataSample\\amazon_arrays_1.json");
+		//questions.get(0).OutputFeatureNames();
 		for (Question question : questions) {
-			question.OutputFeatures();
+			//question.OutputFeatures();
+			System.out.println(training.getFeature().cosine(question.getFeature()));
+			
+		}
+		System.out.println();
+		questions.clear();
+		questions = new QuestionBuilder().build("C:\\Users\\Yin\\Documents\\GitHub\\Hackerbowl2014\\DataSample\\amazon_system_design_1.json");
+		//questions.get(0).OutputFeatureNames();
+		for (Question question : questions) {
+			//question.OutputFeatures();
+			System.out.println(training.getFeature().cosine(question.getFeature()));
+			
+		}
+		System.out.println();
+		questions.clear();
+		questions = new QuestionBuilder().build("C:\\Users\\Yin\\Documents\\GitHub\\Hackerbowl2014\\DataSample\\amazon_tree_graph_1.json");
+		//questions.get(0).OutputFeatureNames();
+		for (Question question : questions) {
+			//question.OutputFeatures();
 			System.out.println(training.getFeature().cosine(question.getFeature()));
 		}
 	}

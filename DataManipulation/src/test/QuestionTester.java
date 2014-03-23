@@ -1,7 +1,7 @@
 package test;
 
 import java.io.IOException;
-import java.util.List;
+import java.util.Set;
 
 import org.json.simple.parser.ParseException;
 
@@ -11,8 +11,8 @@ import Question.QuestionBuilder;
 public class QuestionTester {
 	public static void main(String[] args) throws IOException, ParseException {
 		String fileName = "C:\\Users\\Yin\\Documents\\GitHub\\Hackerbowl2014\\DataSample\\amazon_arrays_1.json";
-		List<Question> questions = new QuestionBuilder().build(fileName);
-		questions.get(0).OutputFeatureNames();
+		Set<Question> questions = new QuestionBuilder().build(fileName);
+		//questions.get(0).OutputFeatureNames();
 		for (Question question : questions) {
 			question.OutputFeatures();
 		}

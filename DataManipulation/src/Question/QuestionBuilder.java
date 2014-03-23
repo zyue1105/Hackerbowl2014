@@ -3,8 +3,8 @@ package Question;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -18,6 +18,7 @@ public class QuestionBuilder {
 	private final static String Answers = "interview_question_comments";
 	private final static String Question = "question";
 	private final static String QuestionDescription = "title";
+	private final static String Location = "location";
 	
 	public JSONObject generateJSONObject(String fileName) throws IOException, ParseException {
 		Reader file = new FileReader(fileName);
@@ -43,13 +44,20 @@ public class QuestionBuilder {
 	public Integer getQuestionVote(JSONObject questionEntry) {
 		JSONObject question = getQuestion(questionEntry);
 		String retString = (String) question.get(VoteCount);
-		return Integer.getInteger(retString);
+		Integer ret = Integer.getInteger(retString);
+		return ret;
+	}
+	
+	public String getLocation(JSONObject questionEntry) {
+		JSONObject question = getQuestion(questionEntry);
+		return (String) question.get(Location);
 	}
 	
 	public Integer getQuestionAnswerCount(JSONObject questionEntry) {
 		JSONObject question = getQuestion(questionEntry);
 		String retString = (String) question.get(AnswersCount);
-		return Integer.getInteger(retString);
+		Integer ret = Integer.getInteger(retString);
+		return ret;
 	}
 	
 	public String getQuestionDescription(JSONObject questionEntry) {
@@ -74,9 +82,9 @@ public class QuestionBuilder {
 		return commentsString;
 	}
 	
-	public List<Question> build(String fileName) throws IOException, ParseException {
+	public Set<Question> build(String fileName) throws IOException, ParseException {
 		JSONArray questionArray = generateJSONArray(fileName);
-		List<Question> questionList = new ArrayList<Question>();
+		Set<Question> questionList = new TreeSet<Question>();
 		for (Object entry : questionArray) {
 			JSONObject questionEntry = (JSONObject) entry;
 			String title = getQuestionDescription(questionEntry);
@@ -84,6 +92,7 @@ public class QuestionBuilder {
 			Question question = new Question(title, answers);
 			question.setAnswer(getQuestionAnswerCount(questionEntry));
 			question.setVote(getQuestionVote(questionEntry));
+			question.setUrl(getLocation(questionEntry));
 			questionList.add(question);
 		}
 		return questionList;

@@ -425,7 +425,7 @@ treeJSON = d3.json("DataSample/testQ.json", function(error, treeData) {
             .text(function(d) {
                 if (d.location) {
 //                    return "<a href='http://www.careercup.com' target='_blank' >Read More</a>";
-                    return strConc(d.title, d.votes, d.answersCount, d.location);
+                    return strConc(d.title, d.votes, d.answerCount, d.location);
                 }
                 else {
                     return "";

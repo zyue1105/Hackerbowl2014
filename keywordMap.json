@@ -1,0 +1,105 @@
+
+{
+	"name": "c++",
+	"map": ["c++"]
+},
+{
+	"name": "java",
+	"map": ["java"]
+},
+{
+	"name": "sql",
+	"map": ["database"]
+},
+{
+	"name": "html",
+	"map": ["networking"]
+},
+{
+	"name": "css",
+	"map": ["networking"]
+},
+{
+	"name": "javascript",
+	"map": ["networking"]
+},
+{
+	"name": "jquery",
+	"map": ["networking"]
+},
+{
+	"name": "php",
+	"map": ["networking"]
+},
+{
+	"name": "python",
+	"map": ["mathematical and computing", "testing"]
+},
+{
+	"name": "perl",
+	"map": ["mathematical and computing", "testing"]
+},
+{
+	"name": "c#",
+	"map": ["c++"]
+},
+{
+	"name": ".net",
+	"map": ["c++", "networking"]
+},
+{
+	"name": "c",
+	"map": ["bit manipulation"]
+},
+{
+	"name": "objective-c",
+	"map": ["c++"]
+},
+{
+	"name": "ruby",
+	"map": ["networking"]
+},
+{
+	"name": "rails",
+	"map": ["networking"]
+},
+{
+	"name": "system",
+	"map": ["system design"]
+},
+{
+	"name": "design",
+	"map": ["system design"]
+},
+{
+	"name": "embedded",
+	"map": ["bit manipulation"]
+},
+{
+	"name": "machine learning",
+	"map": ["mathematical and computing"]
+},
+{
+	"name": "data analysis",
+	"map": ["mathematical and computing"]
+},
+{
+	"name": "network",
+	"map": ["networking"]
+},
+{
+	"name": "distributed",
+	"map": ["system design"]
+},
+{
+	"name": "front",
+	"map": ["networking"]
+},
+{
+	"name": "backend",
+	"map": ["networking"]
+},
+{
+	"name": "operating system",
+	"map": ["system design"]
+},

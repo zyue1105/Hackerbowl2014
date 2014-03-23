@@ -2,7 +2,7 @@
         console.log("in ready");
         console.log($('svg title'));
         $('svg title').parent().tipsy({
-            gravity: 'w',
+            gravity: $.fn.tipsy.autoNS,
             hoverlock:true,
             html: true,
             fade: true

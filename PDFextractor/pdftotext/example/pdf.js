@@ -1,14 +1,14 @@
 /* -*- Mode: Java; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
 /* vim: set shiftwidth=2 tabstop=2 autoindent cindent expandtab: */
 
-var PDFJS = {};
+var PDFJS_new = {};
 
 (function pdfjsWrapper() {
   // Use strict in our context only - users might not want it
   'use strict';
 
   // Files are inserted below - see Makefile
-  /* PDFJSSCRIPT_INCLUDE_ALL */
+  /* PDFJS_newSCRIPT_INCLUDE_ALL */
 /* -*- Mode: Java; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
 /* vim: set shiftwidth=2 tabstop=2 autoindent cindent expandtab: */
 
@@ -19,16 +19,16 @@ var globalScope = (typeof window === 'undefined') ? this : window;
 var ERRORS = 0, WARNINGS = 1, TODOS = 5;
 var verbosity = WARNINGS;
 
-// The global PDFJS object exposes the API
+// The global PDFJS_new object exposes the API
 // In production, it will be declared outside a global wrapper
 // In development, it will be declared here
-if (!globalScope.PDFJS) {
-  globalScope.PDFJS = {};
+if (!globalScope.PDFJS_new) {
+  globalScope.PDFJS_new = {};
 }
 
 // Temporarily disabling workers until 'localhost' FF bugfix lands:
 // https://bugzilla.mozilla.org/show_bug.cgi?id=683280
-globalScope.PDFJS.disableWorker = false;
+globalScope.PDFJS_new.disableWorker = false;
 
 // getPdf()
 // Convenience function to perform binary Ajax GET
@@ -63,7 +63,7 @@ function getPdf(arg, callback) {
   };
   xhr.send(null);
 }
-globalScope.PDFJS.getPdf = getPdf;
+globalScope.PDFJS_new.getPdf = getPdf;
 
 var Page = (function pagePage() {
   function constructor(xref, pageNumber, pageDict, ref) {
@@ -491,10 +491,10 @@ var PDFDoc = (function pdfDoc() {
     // all requirements to run parts of pdf.js in a web worker.
     // Right now, the requirement is, that an Uint8Array is still an Uint8Array
     // as it arrives on the worker. Chrome added this with version 15.
-    if (!globalScope.PDFJS.disableWorker && typeof Worker !== 'undefined') {
-      var workerSrc = PDFJS.workerSrc;
+    if (!globalScope.PDFJS_new.disableWorker && typeof Worker !== 'undefined') {
+      var workerSrc = PDFJS_new.workerSrc;
       if (typeof workerSrc === 'undefined') {
-        throw 'No PDFJS.workerSrc specified';
+        throw 'No PDFJS_new.workerSrc specified';
       }
 
       var worker = new Worker(workerSrc);
@@ -657,7 +657,7 @@ var PDFDoc = (function pdfDoc() {
   return constructor;
 })();
 
-globalScope.PDFJS.PDFDoc = PDFDoc;
+globalScope.PDFJS_new.PDFDoc = PDFDoc;
 
 /* -*- Mode: Java; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
 /* vim: set shiftwidth=2 tabstop=2 autoindent cindent expandtab: */

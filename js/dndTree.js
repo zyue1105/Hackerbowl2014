@@ -562,7 +562,7 @@ treeJSON = d3.json("DataSample/testQ.json", function(error, treeData) {
         });
 
         $('svg title').parent().tipsy({
-            gravity: 'w',
+            gravity: $.fn.tipsy.autoNS,
             hoverlock:true,
             html: true,
             fade: true,

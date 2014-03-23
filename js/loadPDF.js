@@ -1,5 +1,4 @@
 
-PDFJS.workerSrc = document.getElementById("pdf-js").getAttribute("src");
 var pdf2text;
 
 function convertDataURIToBinary(dataURI) {
@@ -22,7 +21,34 @@ function onFileLoad(e) {
   
   // convert the base64 string to a Uint8Array.
   var pdfAsArray = convertDataURIToBinary(e.target.result);  
-  var pdf = new PDFJS.PDFDoc(pdfAsArray);
+  
+  
+  PDFJS.getDocument(pdfAsArray).then(function getPdfHelloWorld(pdf) {
+    //
+    // Fetch the first page
+    //
+    pdf.getPage(1).then(function getPageHelloWorld(page) {
+      var scale = 1;
+      var viewport = page.getViewport(scale);
+
+      //
+      // Prepare canvas using PDF page dimensions
+      //
+      var canvas = document.getElementById('the-canvas');
+      var context = canvas.getContext('2d');
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+
+      //
+      // Render PDF page into canvas context
+      //
+      page.render({canvasContext: context, viewport: viewport});        
+    });          
+    
+  });
+  
+  PDFJS_new.workerSrc = document.getElementById("pdf-js").getAttribute("src");
+  var pdf = new PDFJS_new.PDFDoc(pdfAsArray);  
   
   var div = document.getElementById('viewer');      
   var total = pdf.numPages;

@@ -40,7 +40,7 @@ function recommend()
   
   var companyData;
   for (var i in jsonData.children) {
-    if (jsonData.children[i].name == 'Amazon') {
+    if (jsonData.children[i].name == 'amazon') {
       companyData = jsonData.children[i];
       break;
     }
